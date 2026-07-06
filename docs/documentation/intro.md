@@ -1,10 +1,10 @@
----
-source: documents/Intro.json
----
 
-# Intro
 
-!!! info "Generated document"
-    This page is populated by the METR export from [`documents/Intro.json`](../../documents/Intro.json).
+# 24315 METR-Intro: Intro
 
-*Content not yet exported to Markdown.*
+This page provides the interactive traceability links and open discussions about the Intro. The full text of each item is defined in the standard.
+!!! note 
+    Last modified on 2026-01-09 15:59
+
+| Section | ID | Type | Text Snippet | Discussion | Links| 
+| ------- | -- | ---- | ----------- | ---------- | ----- |

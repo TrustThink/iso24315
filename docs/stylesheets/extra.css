@@ -1,0 +1,20 @@
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+html {
+    scroll-padding-top: 6rem; /* match fixed banner height */
+  }

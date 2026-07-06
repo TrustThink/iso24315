@@ -2,28 +2,49 @@
 site_name = "METR"
 site_description = "Management of Electronic Traffic Regulations — ISO 24315 series"
 site_author = "ISO/TC 204/WG 19"
-site_url = "https://k-vaughn.github.io/iso24315/"
-repo_url = "https://github.com/k-vaughn/iso24315"
+site_url = "https://ISO-TC204.github.io/iso24315/"
+repo_url = "https://github.com/ISO-TC204/iso24315"
 repo_name = "iso24315"
 edit_uri = "edit/main/docs/"
+extra_css = ["stylesheets/extra.css"]
 
 copyright = """
 Website content: <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license">CC BY 4.0</a>
 """
 
 nav = [
-  { "Home" = "index.md" },
-  { "Overview" = "overview.md" },
-  { "Development" = "development.md" },
-  { "Guides" = [
-    "guides.md",
-    { "Rule Makers" = "rule-makers.md" },
-    { "Regulation System" = "regulation-system.md" },
-    { "Distribution System" = "distribution-system.md" },
-    { "Consumer System" = "consumer-system.md" },
-    { "Discrepancy Handling System" = "discrepancy-handling-system.md" },
+  { "TC204 on ISO.org" = "https://www.iso.org/committee/54706.html" },
+  { "TC 204 Home" = "https://isotc204.org/" },
+  { "METR" = [
+    "index.md",
+    { "Overview" = "overview.md" },
+    { "Standards Development" = [
+      "development.md",
+      "workshops.md",
+    ]},
+    { "Implementation Guides" = [
+      { "Overview" = "guides.md" },
+      { "Regional Framework" = "regional-framework.md"},
+      { "Rule Makers" = "rule-makers.md" },
+      { "Regulation System" = "regulation-system.md" },
+      { "Distribution System" = "distribution-system.md" },
+      { "Consumer System" = "consumer-system.md" },
+      { "Discrepancy Handling System" = "discrepancy-handling-system.md" },
+    ]},
+    { "Traceability" = [
+        "documentation/index.md",
+        { "Introduction" = "documentation/Intro.md" },
+        { "Vocab" = "documentation/Vocab.md" },
+        { "ConOps" = "documentation/ConOps.md" },
+        { "SoSR" = "documentation/SoSR.md" },
+        { "SysR" = "documentation/SysR.md" },
+        { "MDR" = "documentation/MDR.md" },
+        { "Workshop Points" = "documentation/SP.md" },
+        { "Notes" = "documentation/N.md" },
+    ]},
+    { "Frequently Asked Questions" = "faqs.md" },
+    { "Discussion" = "https://github.com/ISO-TC204/iso24315/discussions" },
   ]},
-  { "Discussion" = "https://github.com/ISO-TC204/iso24315/discussions" },
 ]
 
 [[project.extra.social]]
@@ -32,14 +53,17 @@ link = "https://github.com/ISO-TC204/iso24315"
 
 [project.theme]
 language = "en"
-# Typical doc layout: left sidebar navigation + inline page TOC — no tabs (avoids cramped / duplicate header chrome).
+logo = "images/car_wifi.png"
+favicon = "images/car_wifi.png"
+# Top-level nav items render as header tabs (matches isotc204.org parent site).
 features = [
   "content.action.edit",
   "content.code.copy",
+  "content.tooltips",
   "navigation.footer",
-  "navigation.sections",
-  "navigation.expand",
   "navigation.path",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
   "navigation.instant",
@@ -48,6 +72,9 @@ features = [
   "search.share",
   "toc.follow",
 ]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
 
 [[project.theme.palette]]
 scheme = "default"
