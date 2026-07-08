@@ -1,12 +1,11 @@
 # Guidance for Rule Makers
 
 !!! note
-    Audience: Public agencies and large campuses that define rules
+    Audience: Public and private entities that define rules, primarily public agencies and large campuses
 
     Purpose: Educate entities on benefits and responsibilities
     
     Scope:
-
     - Examples of required information
     - Strategies to divide the volume of work into bite size pieces
     - Benefits of digitizing data

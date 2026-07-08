@@ -24,6 +24,7 @@ nav = [
     ]},
     { "Implementation Guides" = [
       { "Overview" = "guides.md" },
+      { "Regional Guidance" = "regional-guidance.md"},
       { "Regional Framework" = "regional-framework.md"},
       { "Rule Makers" = "rule-makers.md" },
       { "Regulation System" = "regulation-system.md" },

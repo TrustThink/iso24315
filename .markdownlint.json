@@ -2,7 +2,10 @@
   "MD033": {
     "allowed_elements": [
       "style",
-      "div"
+      "div",
+      "iframe",
+      "a",
+      "br"
     ]
   },
   "MD007": {

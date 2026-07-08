@@ -1,5 +1,19 @@
 # Implementation Guides
 
+!!! note
+    a. Audience: Planners and decision makers, end user representatives (fleet managers),
+
+    b. Purpose: Understand the scope of METR systems and how they work together in various deployment configurations
+    
+    c. Scope Content: Deployment and usage scenarios (US-specific, European-specific deployment scenarios), regional framework, benefits to various stakeholders relevant legislation and encouragement
+    
+    d. Next Steps: Build scenarios
+        1. Management of regulations within governmental agencies (e.g., UK TRO project)
+        2. Provision of regulations to vehicles (e.g., ISA)
+        3. Regulations for trip planning (e.g., which routes for Diesel vehicles)
+        4. Provision of emergent regulations (e.g., work zones)
+        5. As-built refinement of database (e.g., discrepancy management)
+
 These guides are being developed as a resource to the METR community to facilitate deployments and to allow users to share experiences.
 
 The guides are presented from the perspective of different entities in the following diagram.

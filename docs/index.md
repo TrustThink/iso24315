@@ -3,7 +3,7 @@
 !!! note
     Audience: Non-technical, unfamiliar with METR
 
-    Purpose: inform industry, attract deployers
+    Purpose: inform industry, encourage deployment
 
     Scope: “Is it needed?”, “Why should I care?”, “How does it fit into priorities?”
 
@@ -14,7 +14,7 @@
 
 [METR Vision](METRVision.pdf "A 13-page PDF describing METR"){ .md-button .md-button--primary }
 [Vocabulary](documentation/Vocab.md "Definitions for key terms used in METR"){ .md-button .md-button--primary }
-[Overview](METROverview.pdf "A 36-slide presentation describing METR"){ .md-button .md-button--primary }
+[Overview Presentation](METROverview.pdf "A 36-slide presentation describing METR"){ .md-button .md-button--primary }
 
 </div>
 
@@ -25,7 +25,7 @@ Traffic regulations include all of the rules related to using the surface transp
 - Virtually all types of rules, including those:
     - Published in the vehicle code
     - Posted with signs
-    - Marked on the roadway/pavement
+    - Marked on the roadway (i.e., pavement markings)
 - Virtually all modes of travel, including rules for:
     - Motor vehicles (i.e., self-propelled road vehicles)
     - Non-motorized road vehicles (e.g., horse and buggy)

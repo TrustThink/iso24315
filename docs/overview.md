@@ -1,5 +1,18 @@
 # METR overview
 
+<div class="video-container">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/kqrGo-4EMe4?si=P_dMfUkAk8rlYHUM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
+
 METR represents a groundbreaking approach to managing and distributing transportation rules. The system’s primary purpose is to enable electronic dissemination of trustworthy traffic regulations, ensuring that all stakeholders, and their support systems, have access to current regulatory information. The system can also be used to support the distribution of non-regulatory information (e.g., warnings, advisories) in a trustworthy manner.
 
 Enabling the trustworthy transfer of electronic traffic regulations results in a complex system that is composed of separately purchased and managed systems (i.e., a system of systems). The reference architecture for this is defined in ISO 24315-3 and summarized below.
@@ -22,10 +35,7 @@ The reference architecture of the METR system of systems consists of four major 
 
 The METR standards provide a framework for providing electronic rules, but as an international standard, these rules are designed to be very flexible to accommodate the political, legal, and financial realities across the world. It is the responsibility of regional framework and implementation guides to further guide deployments to develop a consistent environment within each region.
 
-!!! note
-    Scope: Deployment and usage scenarios, regional framework, benefits to various stakeholders, relevant legislation and encouragement
-
-Traffic regulations are defined by multiple layers of government and different departments within each layer. For example, regulations can be defined by a regional (multi-national) government, national government, state or provincial government, county government, city government, and even more local entities (e.g., borough, subdivision, or property/campus owner). Further, each of these entities can authorize multiple representatives to issue regulations, often with specific scopes. The following a some typical examples of how authories can be divided within each level:
+Traffic regulations are defined by multiple layers of government and different departments within each layer. For example, regulations can be defined by a regional (multi-national) government, national government, state or provincial government, county government, city government, and even more local entities (e.g., borough, subdivision, or property/campus owner). Further, each of these entities can authorize multiple representatives to issue regulations, often with specific scopes. The following a some typical examples of how authorities can be divided within each level:
 
 - the legislative arm can retain the authority to define any regulation it wishes
 - traffic engineers define permanent traffic regulations (e.g., stop signs, speed limits)
