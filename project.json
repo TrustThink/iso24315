@@ -65,6 +65,11 @@
       "source": "Implied by",
       "target": "Implies"
     },
+    "incorporates": {
+      "name": "Incorporates",
+      "source": "Demonstrated by",
+      "target": "Demonstrates"
+    },
     "realizes": {
       "name": "Realizes",
       "source": "realizes",
