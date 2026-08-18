@@ -7,7 +7,7 @@ Outline of published pages, headings, and section summaries.
 **Management of Electronic Transport Regulations (METR):** METR provides geo-specific, trustworthy, timely, authoritative, machine-interpretable transport rules from jurisdictional entities, aimed at non-technical readers deciding whether METR matters for their priorities.
 
 - **Overview:** METR covers virtually all surface-transport rules—codes, signs, and markings—for motorized and non-motorized modes, pedestrians, and facilities from roads to plazas, so user systems can receive the rules they need as automation grows.
-- **Adding trustworthiness:** Unlike map databases or camera-based sign reading that can be stale or wrong, METR focuses on a trustworthy delivery pipeline so rules of the road can safely support higher levels of automated driving.
+- **Adding trustworthiness:** Unlike map databases or camera-based sign reading that can be stale or wrong, METR focuses on a trustworthy delivery pipeline so regulations can safely support higher levels of automated driving.
 - **Type of rules covered:** Although titled around regulations, METR is intended to deliver trustworthy advisories, guidance, regulations, and unposted rules, collectively called rules on this site.
 - **Timeliness of rules:** METR supports both pre-announced rules available well before they are needed and emergent rules that reflect recent changes such as flooding or other unplanned events.
 - **Discussion:** Invites readers to join the online METR discussion forum at any time.

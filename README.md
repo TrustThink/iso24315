@@ -24,8 +24,8 @@ Traffic regulations include all of the rules related to using the surface transp
   - Pedestrian plazas
   - Indoor environments
 
-As driving automation systems become more common, the importance of providing trustworthy rules of the road to the public has become more critical.
+As driving automation systems become more common, the importance of providing trustworthy traffic regulations to the public has become more critical.
 
 At a very basic level, consider a navigation system that displays the speed limit to the driver. Most current generation systems rely upon GNSS information from the navigation unit coupled with a database of speed limits (stored either locally or in the cloud) to display the current sped limit to the driver. But this can result in inaccurate information as the data in the database ages (e.g., especially in the case of temporary road work speed limits). Other implementations rely on video imaging technologies to read signage, but these are also subject to errors in missing obscured signs or improperly interpreting signs. For a human driver, this is an annoyance that could result in the driver being liable for violating what is actually posted in the field - but for a fully automated vehicle (i.e., an ADS-equipped vehicle), it can be especially problematic.
 
-The ISO 24315 series aims to address this issue by providing all of the rules of the road to user systems in a trustworthy manner.
+The ISO 24315 series aims to address this issue by providing all traffic regulations to user systems in a trustworthy manner.

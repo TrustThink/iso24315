@@ -8,58 +8,54 @@
     Scope: “Is it needed?”, “Why should I care?”, “How does it fit into priorities?”
 
 !!! abstract ""
-    METR provides users with geo-specific, trustworthy, timely, authoritative, machine-interpretable, transport-related rules (e.g., traffic regulations) established by jurisdictional entities
+    METR provides users with geo-specific, trustworthy, timely, authoritative, machine-interpretable, transport-related regulations (e.g., traffic regulations) established by jurisdictional entities
+
+## The Challenge
+
+The modern driving experience is rapidly evolving. The use of navigation systems is extremely wide spread and the adoption of Level 1-3 Automated Driving Systems (ADS) continues to expand. However, there are challenges in moving into Level 4 and 5 ADS. For the most part, current systems still rely upon a human driver in the loop due to challenges in always recognizing and following traffic regulations.
+
+Most users are familiar with the problems. Systems built on databases face challenges in maintaining up-to-date information. As a result, most users of these systems have experienced their systems reporting an erroneous speed limit.
+
+![Example of database error](images/SpeedLimitDiscrepancy.png)
+
+Video image processing systems also have challenges. Not only can signs be obscured, but signs can sometimes be misinterpreted.
+
+![Video image processing error](images/VideoProcessingError.png)
+
+## Impacts
+
+These errors can lead to drivers violating the intended regulations; however, at present, the driver is still responsible for catching these inaccuracies and ensuring that the vehicle is operated in a safe and compliant manner. Migrating to Level 4 and Level 5 ADS requires a process that prevents these errors from happening. While there are some Level 4 Automated Driving Systems in operation, they have operational design domains (ODDs) that are limited to areas where the operating entities ensure that all regulations are properly understood. This type of solution can work for prototype and early deployments, but is not scalable for large-scale use. To achieve large scale deployments, the industry needs a way to provide traffic regulations to vehicles in a trustworthy, electronic manner.
+
+If these errors persist, users will lose trust in driving systems and deployment of life-saving technologies will be delayed.
+
+## The METR Solution
+
+<div class="video-container">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/kqrGo-4EMe4?si=P_dMfUkAk8rlYHUM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
 
 <div class="button-row" markdown="span">
 
-[METR Vision](METRVision.pdf "A 13-page PDF describing METR"){ .md-button .md-button--primary }
+[METR Vision](METRVision.pdf "A 13-page PDF describing METR"){ .md-button .md-button--primary target="_blank" }
 [Vocabulary](documentation/Vocab.md "Definitions for key terms used in METR"){ .md-button .md-button--primary }
-[Overview Presentation](METROverview.pdf "A 36-slide presentation describing METR"){ .md-button .md-button--primary }
+[Overview Presentation](METROverview.pdf "A 36-slide presentation describing METR"){ .md-button .md-button--primary target="_blank" }
+[Discussion forum](https://github.com/ISO-TC204/iso24315/discussions){ .md-button .md-button--primary target="_blank" }
 
 </div>
 
-## Overview
+METR defines a complete, end-to-end from rule-maker to user approach to managing and distributing traffic regulations. METR's holistic approach enables the secure electronic dissemination of trustworthy traffic regulations, ensuring that all stakeholders and their support systems have access to current traffic regulations. The system can be used to disseminate all [types of traffic regulations](what-is-metr.md), including regulatory, advisory, and guidance information, including rules of the road. The technology will assist in both improving the quality of information provided to human drivers as well as enabling better trust of Automated Driving Systems.
 
-Traffic regulations include all of the rules related to using the surface transport infrastructure. This includes:
+Enabling the trustworthy transfer of electronic traffic regulations results in a complex system that is composed of separately purchased and managed systems (i.e., a system of systems). The reference architecture for this is defined in ISO 24315-3 and summarized below.
 
-- Virtually all types of rules, including those:
-    - Published in the vehicle code
-    - Posted with signs
-    - Marked on the roadway (i.e., pavement markings)
-- Virtually all modes of travel, including rules for:
-    - Motor vehicles (i.e., self-propelled road vehicles)
-    - Non-motorized road vehicles (e.g., horse and buggy)
-    - Vehicles that do not normally mix with motor vehicles (e.g., pedal cycles, public-area mobile robots)
-    - Pedestrians
-- Virtually all surface transport facilities, including rules for the use of:
-    - Roads
-    - Auxiliary lanes (e.g., cycle lanes)
-    - Footpaths
-    - Pedestrian plazas
-    - Indoor environments
+## Purpose of this Website
 
-METR should be able to support virtually any rule that needs to be conveyed to virtually any transport user. The graphic depicts rules for freight vehicles, ride sharing, kerbside usage, micromobility operations, vulnerable road users (VRUs), public transport usage, lane usage, public-area mobile robots (PMRs), and road works. This information and more needs to be conveyed to all transport user systems; sample user systems include nomadic devices, PMRs, driver support systems, and ADS-equipped vehicles.
-
-![Illustration of diverse transport rules and user systems](images/streetscape.png)
-
-As driving automation systems become more common, the importance of providing trustworthy rules of the road to the public has become more critical.
-
-## Adding trustworthiness
-
-While many previous efforts have focused on information delivery, METR focuses more on the pipeline to ensure that it can deliver rules of the road in a trustworthy manner. At a very basic level, consider a navigation system that displays the speed limit to the driver. Most current generation systems rely upon GNSS information from the navigation unit coupled with a database of speed limits (stored either locally or in the cloud) to display the current sped limit to the driver. But this can result in inaccurate information as the data in the database ages (e.g., especially in the case of temporary road work speed limits). Other implementations rely on video imaging technologies to read signage, but these are also subject to errors in missing obscured signs or improperly interpreting signs. These issues can result in systems displaying erroneous speed limits (and other rules) to the driver, or worse, using them for automated driving (e.g., Level 3). While the developers of these systems acknowledge their limitations, they claim that the information is only informative and the driver is still responsible for complying with the posted rules, even when these errors occur. For a human driver, this is an annoyance that could result in the driver being liable for violating what is actually posted in the field - but to improve road safety and to enable higher levels of automated driving (e.g., Level 4 and 5), a more trustworthy mechanism is required to deliver these rules.
-
-METR, as defined in the ISO 24315 series, aims to address this issue by providing all relevant transport-related rules to user systems in a trustworthy manner.
-
-## Type of rules covered
-
-While the title of the standards refers to "regulations", the intent is that it will be capable of providing trustworthy advisories, guidance, regulations, and unposted rules of the road to the user. This site uses the term **rule** to represent the aggregation of regulations, advisories, and guidance.
-
-## Timeliness of rules
-
-Within its scope, METR will support both pre-announced rules, which can be accessed well in advance of the location and time of need, and emergent rules, which reflect recent changes (for example, due to flooding or other unplanned activities).
-
-## Discussion
-
-Join the online discussion anytime.
-
-[Discussion forum](https://github.com/ISO-TC204/iso24315/discussions){ .md-button }
+This website is intended to provide an overview of the METR standards, as defined in the ISO 24315 series, and to provide guidance on the development, deployment and operation of these systems. The normative METR requirements that are internationally applicable are are defined in the ISO 24315 series. However, these standards need to be supplemented by regional (e.g., European, North American, etc.) standards that refine the reference architecture into preferred deployment scenarios and protocols to be used for interoperability. This site provides links to these regional customizations of the international standards.
