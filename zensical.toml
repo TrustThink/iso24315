@@ -18,13 +18,13 @@ nav = [
   { "METR" = [
     { "METR" = "index.md" },
     { "What is METR" = "what-is-metr.md" },
-    { "Key Components of METR" = "architecture.md" },
+    { "Key Components" = "key-components.md" },
     { "Standards Development" = [
       "development.md",
       "workshops.md",
     ]},
     { "Implementation Guides" = [
-      { "Reference Architecture" = "ig/guides.md" },
+      { "Guide Structure" = "ig/guides.md" },
       { "Regional Guidance" = "ig/regional-guidance.md"},
       { "Sample Regional Framework" = "ig/regional-framework.md"},
       { "Rule Makers" = "ig/rule-makers.md" },

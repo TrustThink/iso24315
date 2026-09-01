@@ -4,7 +4,7 @@
 
 ### Purpose of this document
 
-This document focuses on understanding METR's scope, deployment and usage scenarios, regional frameworks, and stakeholder benefits, without delving into deep technical implementation details.
+This document focuses on understanding METR's scope, deployment and usage scenarios, regional frameworks to support region-specific needs and environments, and stakeholder benefits, without delving into deep technical implementation details.
 
 ### Audience
 
@@ -15,13 +15,17 @@ This document is designed for a broad audience. The primary audience includes pl
 The ISO 24315 series establishes a standardized framework for the Management of Electronic Traffic Regulations (METR), aimed at providing trustworthy, authoritative, and machine-interpretable traffic rules for surface transportation systems. This series supports the digital transformation of traffic regulations, enabling seamless integration with intelligent transport systems (ITS), automated driving systems (ADS), and connected vehicles. It is particularly relevant for automated vehicles operating at higher levels (e.g., SAE Level 3 or 5), where reliable access to digital rules is essential for compliance and safety.
 
 - **ISO/TS 24315-1**: Vocabulary for METR, defining key terms to ensure consistent understanding.
-- **ISO/TR 24315-2**: Overview of system, user needs, and system architecture.
-- **ISO/TS 24315-3**: End-to-end requirements for the METR system of systems (SoS), covering the full lifecycle from rule creation to dissemination.
+- **ISO/TR 24315-2**: Overview of operational concepts, user needs, and system functions and architecture.
+- **ISO/TS 24315-3**: End-to-end requirements for the METR system of systems (SoS), covering regulation management, dissemination, and discrepancy reporting.
 - **ISO/TS 24315-4**: Requirements for each component system within the METR SoS.
 
 ### Need for Regional Implementation Guidance
 
-As METR systems become more widespread, regional implementation guides are essential to ensure interoperability across different jurisdictions. These guides provide a consistent framework that aligns with national and international standards while allowing for local customization. Without clear regional guidance, there is a risk of fragmented or incompatible systems that could undermine the effectiveness of METR, leading to potential safety issues, inefficiencies, and challenges in rule enforcement.
+As METR systems become more widespread, regional implementation guides are essential to ensure interoperability across different jurisdictions. These guides provide a consistent framework that aligns with national and international standards while allowing for local customization. This complementary layered approach thus safely supports METR infrastructure and deployment across the METR ecosystem. 
+
+![Three-tiered approach](../images/three-tiered-approach.png)
+
+Without clear regional guidance, there is a risk of fragmented or incompatible systems that could undermine the effectiveness of METR, leading to potential safety issues, inefficiencies, and challenges in rule enforcement.
 
 ## Scope of METR Systems
 
@@ -29,9 +33,11 @@ METR represents a groundbreaking approach to managing and distributing transport
 
 **Trust and Security**: Regulations are authenticated using certificates and signatures to prevent falsification.
 
-**Interoperability**: METR is intended to enhance and update existing standards like DATEX II, TN-ITS, and TransModel, rather than replacing them.
+**Regional Interoperability**: Deployment environments vary across the globe due to different regional needs. Within each region of vehicular mobility, METR will be associated with standardized protocols that provide interoperability within the geographic region (e.g., Europe).
 
-**Machine-Interpretability**: Rules are formatted for direct use by ADS, reducing human interpretation errors.
+**Standards Consistency**: METR is intended to enhance and update existing standards like DATEX II, TN-ITS, and TransModel, rather than replacing them.
+
+**Machine-Interpretability**: Rules are formatted for use by ADS, reducing human interpretation errors.
 
 METR does not dictate the content of regulations but provides a framework for their management, including data governance, cybersecurity, and lifecycle processes.
 
@@ -39,11 +45,11 @@ METR does not dictate the content of regulations but provides a framework for th
 
 METR operates as a system of systems (SoS), where components collaborate to manage the full lifecycle of electronic regulations as shown in Figure 1:
 
-**Rule Definition**: Authorities (e.g., police, infrastructure owners, road operators) at various levels of hierarchy (e.g., national, regional, local) define regulations.
+**Regulation Definition**: Authorities (e.g., infrastructure owners, road operators, emergency personnel) at various levels of hierarchy (e.g., national, regional, local) define regulations.
 
-**Electronic Rule Management**: Organizations enter the rules, including the type of regulation, affected location(s), and validity periods into a **regulation system**. This will typically be performed with the use of tools to ensure proper geolocation of the rules and to validate, certify, and sign the records.
+**Electronic Regulation Management**: Organizations enter the regulations, including the type of regulation, affected location(s), and validity periods into a **regulation system**. This will typically be performed with the use of tools to ensure proper geolocation of the regulation and to validate, certify, and sign the regulations.
 
-**Consolidation and Dissemination**: Centralized or hierarchical servers collect the rules from the various authorities at various levels of hierarchy to form a consolidated view of available regulations in a **distribution system**. These rules are then distributed (e.g., via publish/subscribe protocols) to end users (e.g., vehicles, apps) based on their needs.
+**Consolidation and Dissemination**: Centralized or hierarchical servers collect the regulations from relevant authorities to form a consolidated view of available regulations in a **distribution system**. These rules are then distributed (e.g., via publish/subscribe protocols) to end users (e.g., vehicles, apps) based on their needs.
 
 **End-User Consumption**: **Consumer systems** (e.g., on-board a vehicle, a pre-trip planning application) determine the rules needed and obtain them from the distribution system(s) with proper validity checks. The end-user system is then responsible for determining how to apply the applicability of the rules to the current situation (e.g., based on location, time-of-day, weather, and other factors) and applying them as appropriate. For example an ADS might use this information to make vehicle control decisions while a driver information system might use this information to determine what information should be displayed to the driver.
 
@@ -53,11 +59,13 @@ METR operates as a system of systems (SoS), where components collaborate to mana
 
 ### Overview
 
-A reference architecture provides a generic representation of how systems could be designed so that key interfaces can be identified and interoperability standards developed. However, each deployment will likely vary from the more theoretical reference architecture and standardization of interfaces allows for hybrid architectures as long as each system. This section presents some examples of how the reference architecture is likely to be deployed depending on various factors, including:
+A reference architecture provides a generic representation of how systems could be designed so that key interfaces can be identified and interoperability standards developed. However, each deployment will likely vary from the more theoretical reference architecture. This section presents some examples of how the reference architecture is likely to be deployed depending on various factors, including:
 
-Complexity of rule maker and translator environment: If all rules are issued by a single or small number of authorities, a single regulation system can more easily perform the collection role for the jurisdiction and may even be able to act as a distribution system. By comparison, complex regions with multiple levels of rule-making hierarchy and multiple rule makers within each hierarchy will likely need to keep regulations distinctly separate from the collection and distribution of rules.
+Jurisdictional complexity: If all rules are issued by a single or small number of authorities, a single regulation system can more readily perform the collection role for the jurisdiction and may even be able to act as a distribution system. By comparison, complex regions with multiple levels of rule-making hierarchy and multiple rule makers within each hierarchy will likely need to keep regulations distinctly separate from the collection and distribution of rules.
 
-Cross-border coordination: Countries that deal with heavy cross-border traffic will need to ensure that their rules conform to regional standards so that vehicles crossing the border can easily understand the local rules.
+Cross-border coordination: Jurisdictions that deal with heavy cross-border traffic (e.g., Europe) ideally will adopt regional policies and standards so that vehicles can seamlessly interoperate throughout the region. In this case, the different jurisdictions can more readily share system components (e.g., multiple jurisdictions can share a common regulation system).
+
+Inter-regional coordination: Jurisdictions that do not adopt compatible policies and standards will create an operational boundary and will need to establish policies on how vehicles from foreign jurisdictions can enter and operate within its new environment. This distinct jurisdictional boundary will likely result in a distinct system boundary as well.
 
 Scope of users of the system: METR is designed to support rules for a variety of users, including general motor vehicles, regulated vehicles (e.g., heavy vehicles, buses, taxis), public-area mobile robots, etc. These rules are often made by different rule makers but can have overlapping application (e.g., heavy vehicles still have to comply with most motor vehicle regulations)
 

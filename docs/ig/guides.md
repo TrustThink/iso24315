@@ -1,4 +1,4 @@
-# Implementation Guides
+# Guide Structure
 
 !!! note
     a. Audience: Planners and decision makers, end user representatives (fleet managers),
@@ -14,7 +14,7 @@
         4. Provision of emergent regulations (e.g., work zones)
         5. As-built refinement of database (e.g., discrepancy management)
 
-The METR implementation guides are being developed as a resource to the METR community to facilitate deployments and to allow users to share experiences.
+The METR implementation guides are being developed as a resource for the METR community to facilitate deployments and to allow users to share experiences.
 
 Each implementation guide is presented from the perspective of one of the entities in the following diagram.
 

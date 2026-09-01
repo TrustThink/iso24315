@@ -1,4 +1,4 @@
-# Standards Development
+# Development Approach
 
 !!! abstract ""
     Systems engineering based on stakeholder engagement to elicit user needs
@@ -26,9 +26,11 @@ Detailed interface specifications for interoperability are likely to vary by reg
 
 ISO/TC 204/WG 19 continues to seek input from surface transport professionals and advocates. Perspectives of interest include:
 
-- Regulators
+- Rule makers
+- Automotive industry
+- Navigation system developers
 - Transport users
-- Support providers
+- Support providers (e.g., emergency response)
 - Third parties
 
 ![Stakeholder perspectives](images/stakeholders.jpg){ width="280"; }

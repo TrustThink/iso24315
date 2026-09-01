@@ -1,25 +1,27 @@
 # What is METR?
 
+METR is a system of systems that ensures digital rules of the road are communicated dynamically across systems, infrastructure, and end users. Importantly, METR authenticates and secures these communications in real time. This facilitates interoperability that is trustworthy, safe and effective. METR allows for customization at the regional, national, and local levels to support a connected, interoperable, and safe global transportation ecosystem.
+
 ## Scope of Regulations Covered by METR
 
 Traffic regulations include all of the regulations related to using the surface transport infrastructure. This includes:
 
 - Virtually all types of regulations, including those:
-    - Published in the vehicle code
+    - Published in the highway code
     - Posted with signs
     - Marked on the roadway (i.e., pavement markings)
     - Indicated through other traffic control devices (e.g., gates)
 - Virtually all modes of travel, including regulations for:
     - Motor vehicles (i.e., self-propelled road vehicles)
     - Non-motorized road vehicles (e.g., horse and buggy)
-    - Vehicles that do not normally mix with motor vehicles (e.g., pedal cycles, public-area mobile robots)
-    - Pedestrians
+    - Vehicles that do not normally mix with motor vehicles (e.g., pedal cycles, e-scooters, public-area mobile robots)
+    - Foot traffic
 - Virtually all surface transport facilities, including regulations for the use of:
     - Roads
     - Auxiliary lanes (e.g., cycle lanes)
     - Footpaths
     - Pedestrian plazas
-    - Indoor environments
+    - Indoor environments (e.g., for PMRs)
 
 While the title of the standards refers to "regulations", the intent is that it will be capable of providing trustworthy advisories, guidance, regulations, and unposted regulations (i.e., rules of the road) to the user. This site uses the term **rule** to represent the aggregation of regulations, advisories, and guidance.
 
@@ -33,9 +35,11 @@ As driving automation systems become more common, the importance of providing tr
 
 ### Trustworthiness
 
-While many previous efforts have focused on information delivery, METR focuses more on the pipeline to ensure that it can deliver regulations in a trustworthy manner. At a very basic level, consider a navigation system that displays the speed limit to the driver. Most current generation systems rely upon GNSS information from the navigation unit coupled with a database of speed limits (stored either locally or in the cloud) to display the current sped limit to the driver. But this can result in inaccurate information as the data in the database ages (e.g., especially in the case of temporary road work speed limits). Other implementations rely on video imaging technologies to read signage, but these are also subject to errors in missing obscured signs or improperly interpreting signs. These issues can result in systems displaying erroneous speed limits (and other regulations) to the driver, or worse, using them for automated driving (e.g., Level 3). The developers of these systems acknowledge their limitations, they claim that the information is only informative and the driver is still responsible for complying with the posted regulations, even when these errors occur. For a human driver, this is an annoyance that could result in the driver being liable for violating what is actually posted in the field - but to improve road safety and to enable higher levels of automated driving (e.g., Level 4 and 5), a more trustworthy mechanism is required to deliver these regulations.
+While many previous efforts have focused on information delivery, METR focuses more on the pipeline to ensure that it can deliver regulations in a trustworthy manner. At a very basic level, consider a navigation system that displays the speed limit to the driver. Most current generation systems rely upon GNSS information from the navigation unit coupled with a database of speed limits (stored either locally or in the cloud) to display the current sped limit to the driver. But this can result in inaccurate information as the data in the database ages (e.g., especially in the case of temporary road work speed limits).
 
-METR, as defined in the ISO 24315 series, aims to address this through the use of robust cryptography, feedback loops, and other mechanisms that ensure trustworthiness among all METR users and data providers.
+Other implementations rely on video imaging technologies to read signage, but these are also subject to errors in missing obscured signs or improperly interpreting signs. These issues can result in systems displaying erroneous speed limits (and other regulations) to the driver, or worse, using them for automated driving (e.g., Level 3). The developers of these systems acknowledge their limitations and they claim that the information is only informative and the driver is still responsible for complying with the posted regulations, even when these errors occur. For a human driver, such errors could result in the driver being liable for violating what is actually posted in the field - but to improve road safety and to enable higher levels of automated driving (e.g., Level 4 and 5), a more trustworthy mechanism is required to deliver these regulations.
+
+METR, as defined in the ISO 24315 series, aims to enhance trustworthiness by using robust cryptographic mechanisms, authentication, feedback loops through discrepancy reports, and other security controls that ensure trustworthiness among all METR users and data providers.
 
 ### Layered Regulations
 
@@ -47,7 +51,7 @@ Traffic regulations are defined by multiple layers of government and different d
 - maintenance personnel approve and implement temporary regulations in relation to road works
 - law enforcement personnel implement specific types of regulations based on current conditions (e.g., road closures due to flooding)
 
-Each of these entities potentially have their own distinct data entry system yet all of these regulations need to be digitized, and stored in a secure manner and made available for sharing with other systems in a standard format. The METR [reference architecture] allows for all of these entities to enter regulations into a common network.
+Each of these entities potentially have their own distinct data entry system yet all of these regulations need to be digitized, and stored in a secure manner and made available for sharing with other systems in a standard format. The METR [reference architecture](ig/guides.md) allows for all of these entities to enter regulations into a common network.
 
 ### Location Referencing
 
