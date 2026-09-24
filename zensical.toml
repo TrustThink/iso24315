@@ -68,7 +68,7 @@ nav = [
         "development.md",
         "workshops.md",
       ]},
-      { "Vocabulary" = "https://k-vaughn.github.io/iso24315-vocab/" },
+      { "Vocabulary" = "https://isotc204.org/iso24315-vocab/" },
       { "Traceability" = [
         "documentation/index.md",
         { "Introduction" = "documentation/Intro.md" },
