@@ -8,21 +8,21 @@ This site is dedicated to the development of the ISO 24315 series, which is the 
 
 Traffic regulations include all of the rules related to using the surface transport infrastructure. This includes:
 
-- Virtually all types of rules, including those:
-  - Published in the vehicle code
-  - Posted with signs
-  - Marked on the roadway/pavement
-- Virtually all modes of travel, including rules for:
-  - Motor vehicles (i.e., self-propelled road vehicles)
-  - Non-motorized road vehicles (e.g., horse and buggy)
-  - Vehicles that do not normally mix with motor vehicles (e.g., pedal cycles, public-area mobile robots)
-  - Pedestrians
-- Virtually all surface transport facilities, including rules for the use of:
-  - Roads
-  - Auxiliary lanes (e.g., cycle lanes)
-  - Footpaths
-  - Pedestrian plazas
-  - Indoor environments
+- Virtually all types of regulations, including those:
+    - Published in the vehicle code
+    - Posted with signs
+    - Marked on the roadway/pavement
+- Virtually all modes of travel, including regulations for:
+    - Motor vehicles (i.e., self-propelled road vehicles)
+    - Non-motorized road vehicles (e.g., horse and buggy)
+    - Vehicles that do not normally mix with motor vehicles (e.g., pedal cycles, public-area mobile robots)
+    - Pedestrians
+- Virtually all surface transport facilities, including regulations for the use of:
+    - Roads
+    - Auxiliary lanes (e.g., cycle lanes)
+    - Footpaths
+    - Pedestrian plazas
+    - Indoor environments
 
 As driving automation systems become more common, the importance of providing trustworthy traffic regulations to the public has become more critical.
 

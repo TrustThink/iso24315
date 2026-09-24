@@ -16,33 +16,79 @@ nav = [
   { "TC204 on ISO.org" = "https://www.iso.org/committee/54706.html" },
   { "TC 204 Home" = "https://isotc204.org/" },
   { "METR" = [
-    { "METR" = "index.md" },
+    { "Management of Electronic Traffic Regulations" = "index.md" },
     { "What is METR" = "what-is-metr.md" },
-    { "Key Components" = "key-components.md" },
-    { "Standards Development" = [
-      "development.md",
-      "workshops.md",
+    { "METR Environment" = [
+      "metr-environment.md",
+      "regulatory-environment.md",
+      "roadway-environment.md",
+      "need-for-trustworthiness.md",
+      "distribution-environment.md",
+      "communications-environment-with-consumer.md",
+      "consumer-environment.md",
+      "regional-environment.md",
+      "functional-view.md",
     ]},
-    { "Implementation Guides" = [
-      { "Guide Structure" = "ig/guides.md" },
-      { "Regional Guidance" = "ig/regional-guidance.md"},
-      { "Sample Regional Framework" = "ig/regional-framework.md"},
-      { "Rule Makers" = "ig/rule-makers.md" },
-      { "Regulation System" = "ig/regulation-system.md" },
-      { "Distribution System" = "ig/distribution-system.md" },
-      { "Consumer System" = "ig/consumer-system.md" },
-      { "Discrepancy Handling System" = "ig/discrepancy-handling-system.md" },
+    { "Key Components" = [
+      "key-components.md",
+      "system-of-systems.md",
+      "physical-view.md",
     ]},
-    { "Traceability" = [
+    { "Possible Deployment Scenarios" = "deployment-scenarios.md" },
+    { "Perspectives and Guidance" = [
+      "perspectives.md",
+      { "Regional Body Perspective" = [
+        "regional-body-perspective.md",
+        "regional-framework.md",
+      ]},
+      { "Rule Maker Perspective" = [
+        "rule-maker-perspective.md",
+        "tro-what-is-a-tro.md",
+        "tro-jurisdictional-entity.md",
+        "tro-regulation-states.md",
+        "tro-states.md",
+        "tro-representations.md",
+        "tro-proposal-and-approval.md",
+        "tro-installation-and-implementation.md",
+        "tro-physical-digital-activation.md",
+      ]},
+      { "Jurisdictional Management Perspective" = [
+        "jurisdictional-management-perspective.md",
+        "regulation-system-perspective.md",
+        "distribution-perspective.md",
+        "discrepancy-handling-perspective.md",
+      ]},
+      "road-operator-perspective.md",
+      "consumer-perspective.md",
+      "system-management-perspective.md",
+    ]},
+    { "METR Engineering Information" = [
+      "metr-engineering-information.md",
+      { "Development Process" = [
+        "development.md",
+        "workshops.md",
+      ]},
+      { "Vocabulary" = "https://k-vaughn.github.io/iso24315-vocab/" },
+      { "Traceability" = [
         "documentation/index.md",
         { "Introduction" = "documentation/Intro.md" },
-        { "Vocab" = "documentation/Vocab.md" },
         { "ConOps" = "documentation/ConOps.md" },
         { "SoSR" = "documentation/SoSR.md" },
         { "SysR" = "documentation/SysR.md" },
         { "MDR" = "documentation/MDR.md" },
         { "Workshop Points" = "documentation/SP.md" },
         { "Notes" = "documentation/N.md" },
+      ]},
+    ]},
+    { "Implementation Guides" = [
+      { "Guide Structure" = "ig/guides.md" },
+      { "Regional Guidance" = "ig/regional-guidance.md" },
+      { "Sample Regional Framework" = "ig/regional-framework.md" },
+      { "Rule Makers" = "ig/rule-makers.md" },
+      { "Regulation System" = "ig/regulation-system.md" },
+      { "Distribution System" = "ig/distribution-system.md" },
+      { "Consumer System" = "ig/consumer-system.md" },
+      { "Discrepancy Handling System" = "ig/discrepancy-handling-system.md" },
     ]},
     { "Frequently Asked Questions" = "faqs.md" },
     { "Discussion" = "https://github.com/ISO-TC204/iso24315/discussions" },
@@ -54,25 +100,24 @@ icon = "fontawesome/brands/github"
 link = "https://github.com/ISO-TC204/iso24315"
 
 [project.theme]
+name = "material"
+# Classic Material matches ISO TC 204 (isotc204.org): Roboto, indigo header, light scheme.
+variant = "classic"
 language = "en"
 logo = "images/car_wifi.png"
 favicon = "images/car_wifi.png"
-# Top-level nav items render as header tabs (matches isotc204.org parent site).
 features = [
   "content.action.edit",
   "content.code.copy",
   "content.tooltips",
+  "header.auto_hide",
   "navigation.footer",
   "navigation.path",
   "navigation.tabs",
   "navigation.tabs.sticky",
   "navigation.top",
-  "navigation.tracking",
-  "navigation.instant",
   "search.highlight",
   "search.suggest",
-  "search.share",
-  "toc.follow",
 ]
 
 [project.theme.icon]
@@ -80,13 +125,8 @@ repo = "fontawesome/brands/github"
 
 [[project.theme.palette]]
 scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
-
-[[project.theme.palette]]
-scheme = "slate"
-toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
+primary = "indigo"
+accent = "indigo"
 
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
@@ -111,6 +151,9 @@ anchor_linenums = true
 [project.markdown_extensions.pymdownx.magiclink]
 [project.markdown_extensions.pymdownx.mark]
 [project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.snippets]
+check_paths = true
+base_path = ["docs"]
 [project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true

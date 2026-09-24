@@ -1,4 +1,4 @@
-# Management of Electronic Transport Regulations (METR)
+# Management of Electronic Traffic Regulations (METR)
 
 !!! note
     Audience: Non-technical, unfamiliar with METR
@@ -8,11 +8,11 @@
     Scope: “Is it needed?”, “Why should I care?”, “How does it fit into priorities?”
 
 !!! abstract ""
-    METR provides users with geo-specific, trustworthy, timely, authoritative, machine-interpretable, transport-related regulations (e.g., traffic regulations) established by jurisdictional entities
+    METR provides users with geo-specific, trustworthy, timely, authoritative, machine-interpretable **rules and regulations (R&amp;Rs)** established by jurisdictional entities
 
 ## The Challenge
 
-The modern driving experience is rapidly evolving. The use of navigation systems is extremely widespread and the adoption of Level 1-3 Automated Driving Systems (ADS) continues to expand. However, there are challenges in moving into Level 4 and 5 ADS. For the most part, current systems still rely upon a human driver in the loop due to challenges in consistently and accurately recognizing and following traffic regulations.
+The modern driving experience is rapidly evolving. The use of navigation systems is extremely widespread and the adoption of Level 1-3 Automated Driving Systems (ADS) continues to expand. However, there are challenges in moving into Level 4 and 5 ADS. For the most part, current systems still rely upon a human driver in the loop due to challenges in consistently and accurately recognizing and following rules and regulations (R&amp;Rs).
 
 Most users are familiar with the problems. Systems leveraging databases face challenges in maintaining up-to-date information. As a result, many users of these systems have experienced their systems reporting an erroneous speed limit.
 
@@ -22,9 +22,9 @@ Video image processing systems also have challenges. Not only can signs be obscu
 
 ![Video image processing error](images/VideoProcessingError.png)
 
-## Impacts
+## Limitations of the Status Quo
 
-These errors can lead to drivers unintentionally violating the intended regulations; however, at present, the driver is still responsible for catching these inaccuracies and ensuring that the vehicle is operated in a safe and compliant manner. Migrating to Level 4 and Level 5 ADS requires a process that prevents these errors from happening. While there are some Level 4 Automated Driving Systems in operation, they have operational design domains (ODDs) that are limited to areas where the operating entities ensure that all regulations are properly understood. This type of solution can work for prototype and early deployments, but is not scalable for large-scale use. To achieve large scale deployments, the industry needs a way to provide traffic regulations to vehicles in a trustworthy, electronic manner.
+These errors can lead to drivers unintentionally violating the intended R&amp;Rs; however, at present, the driver is still responsible for catching these inaccuracies and ensuring that the vehicle is operated in a safe and compliant manner. Migrating to Level 4 and Level 5 ADS requires a process that prevents these errors from happening. While there are some Level 4 Automated Driving Systems in operation, they have operational design domains (ODDs) that are limited to areas where the operating entities ensure that all R&amp;Rs are properly understood. This type of solution can work for prototype and early deployments, but is not scalable for large-scale use. To achieve large scale deployments, the industry needs a way to provide R&amp;Rs to vehicles in a trustworthy, electronic manner.
 
 If these errors persist, users will lose trust in driving automation and information systems and deployment of life-saving technologies will be delayed.
 
@@ -52,9 +52,9 @@ If these errors persist, users will lose trust in driving automation and informa
 
 </div>
 
-METR defines a complete, end-to-end (i.e., from rule-maker to user) approach to managing and distributing traffic regulations. METR's holistic approach enables the secure electronic dissemination of trustworthy traffic regulations, ensuring that all stakeholders and their driving and navigation support systems have access to current traffic regulations. The system can be used to disseminate all [types of traffic regulations](what-is-metr.md), including regulatory, advisory, and guidance information, including rules of the road, as defined in the highway code. The technology will assist in both improving the quality of information provided to human drivers as well as enabling better trust of Automated Driving Systems.
+METR defines a complete, end-to-end (i.e., from rule-maker to user) approach to managing and distributing R&amp;Rs. METR's holistic approach enables the secure electronic dissemination of trustworthy R&amp;Rs, ensuring that all stakeholders and their driving and navigation support systems have access to current R&amp;Rs. The system can be used to disseminate all [types of regulations](what-is-metr.md), including regulatory, advisory, and guidance information, as well as rules of the road, as defined in the highway code. The technology will assist in both improving the quality of information provided to human drivers as well as enabling better trust of Automated Driving Systems (ADS).
 
-Enabling the trustworthy distribution of electronic traffic regulations results in a complex system of systems, where the components are acquired and managed by independent entities but are still interoperable. The reference architecture for this is defined in ISO 24315-3 and summarized below.
+Enabling the trustworthy distribution of electronic regulations results in a complex system of systems, where the components are acquired and managed by independent entities but are still interoperable. The reference architecture for METR is defined in ISO 24315-3 and summarized in the [physical view](physical-view.md).
 
 ## Purpose of this Website
 

@@ -15,13 +15,13 @@
 
 ## Introduction
 
-### Purpose of Document
+### Purpose of Page
 
-This document is intended to provide comprehensive guidance for deploying and managing a Management of Electronic Traffic Regulations (METR) distribution system. It focuses on the critical aspects that must be considered by entities responsible for distributing METR data, including prerequisites for deployment, maintenance requirements, interoperability standards, and optional features. This guide aims to equip stakeholders with the knowledge needed to establish and operate a robust and efficient distribution system that meets the needs of diverse user groups and ensures the reliable dissemination of transportation regulations.
+This page is intended to provide comprehensive guidance for deploying and managing a Management of Electronic Traffic Regulations (METR) distribution system. It focuses on the critical aspects that must be considered by entities responsible for distributing METR data, including prerequisites for deployment, maintenance requirements, interoperability standards, and optional features. This guide aims to equip stakeholders with the knowledge needed to establish and operate a robust and efficient distribution system that meets the needs of diverse user groups and ensures the reliable dissemination of rules and regulations.
 
 ### Audience
 
-This document is designed for a broad audience, including system administrators, IT professionals, transportation planners, and regulatory authorities involved in the deployment and management of METR distribution systems. It is also valuable for consultants and service providers who support these entities, as well as policymakers who oversee transportation regulations and ensure that these systems meet legal and operational standards.
+This page is designed for a broad audience, including system administrators, IT professionals, transportation planners, and regulatory authorities involved in the deployment and management of METR distribution systems. It is also valuable for consultants and service providers who support these entities, as well as policymakers who oversee transportation regulations and ensure that these systems meet legal and operational standards.
 
 ## What Are the Prerequisites for Deploying a METR Distribution System?
 
@@ -49,7 +49,7 @@ METR distribution systems must handle various types of regulations, such as spee
 
 #### Types of Vehicles
 
-The distribution system must also support different types of vehicles, including passenger cars, commercial trucks, public transit vehicles, and autonomous vehicles. Each vehicle type may require different R&R sets or data formats, and the system must be able to deliver the appropriate information to each user group. For example, autonomous vehicles may need highly detailed and precise regulation data to ensure safe and compliant operation, while traditional vehicles may require simpler, more general information.
+The distribution system must also support different types of vehicles, including passenger cars, commercial trucks, public transit vehicles, and autonomous vehicles. Each vehicle type may require different regulation sets or data formats, and the system must be able to deliver the appropriate information to each user group. For example, autonomous vehicles may need highly detailed and precise regulation data to ensure safe and compliant operation, while traditional vehicles may require simpler, more general information.
 
 ## What Is Involved with Managing the Data?
 

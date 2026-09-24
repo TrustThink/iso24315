@@ -15,13 +15,13 @@
 
 ## Introduction
 
-### Purpose of Document
+### Purpose of Page
 
-This document is designed to provide comprehensive guidance for state and local entities that operate a Management of Electronic Traffic Regulations (METR) system. Its primary purpose is to assist sub-national governments in effectively deploying, managing, and maintaining METR systems, ensuring that transport regulations are accessible in trustworthy, electronic formats. By focusing on sub-national guidance, this document addresses the unique challenges and opportunities that state and local operators face, helping them to establish robust and compliant METR systems tailored to their specific needs and jurisdictions.
+This page is designed to provide comprehensive guidance for state and local entities that operate a Management of Electronic Traffic Regulations (METR) system. Its primary purpose is to assist sub-national governments in effectively deploying, managing, and maintaining METR systems, ensuring that rules and regulations are accessible in trustworthy, electronic formats. By focusing on sub-national guidance, this page addresses the unique challenges and opportunities that state and local operators face, helping them to establish robust and compliant METR systems tailored to their specific needs and jurisdictions.
 
 ### Audience
 
-This document is intended for state and local government officials, transportation regulators, IT professionals, and other stakeholders involved in the deployment and operation of METR systems. It is particularly relevant for those responsible for the oversight and management of electronic traffic regulations, including infrastructure owners and operators (IOOs), policy makers, and technical staff who ensure the system’s integrity and compliance. Additionally, this guide will be useful for consultants and service providers who support sub-national entities in implementing METR systems.
+This page is intended for state and local government officials, transportation regulators, IT professionals, and other stakeholders involved in the deployment and operation of METR systems. It is particularly relevant for those responsible for the oversight and management of electronic traffic regulations, including infrastructure owners and operators (IOOs), policy makers, and technical staff who ensure the system’s integrity and compliance. Additionally, this guide will be useful for consultants and service providers who support sub-national entities in implementing METR systems.
 
 ## Prerequisites for Deploying a METR Regulation System
 
@@ -43,7 +43,7 @@ Before deploying a METR regulation system, operators must address several key pr
 
 ## Cost Factors
 
-While specific cost estimates are beyond the scope of this document, several cost factors must be considered during the deployment, operation, and maintenance of a METR system:
+While specific cost estimates are beyond the scope of this page, several cost factors must be considered during the deployment, operation, and maintenance of a METR system:
 
 1. **Connectivity Costs:** Ensure reliable and secure connectivity for all system components, which is crucial for real-time regulation dissemination and compliance.
 

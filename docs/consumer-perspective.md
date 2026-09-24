@@ -15,13 +15,13 @@
 
 ## Introduction
 
-### Purpose of Document
+### Purpose of Page
 
-This document provides guidance for deploying and managing a Management of Electronic Traffic Regulations (METR) consumer system. It focuses on helping entities that consume METR data, such as navigation systems, vehicles, and infrastructure operators, to effectively utilize transportation regulations in an electronic format. The document outlines key considerations, including prerequisites for deployment, the types of regulations required, maintenance expectations, data management responsibilities, and discrepancy handling. By following this guide, stakeholders will be able to integrate METR into their systems, ensuring compliance and operational efficiency.
+This page provides guidance for deploying and managing a Management of Electronic Traffic Regulations (METR) consumer system. It focuses on helping entities that consume METR data, such as navigation systems, vehicles, and infrastructure operators, to effectively utilize transportation regulations in an electronic format. The page outlines key considerations, including prerequisites for deployment, the types of regulations required, maintenance expectations, data management responsibilities, and discrepancy handling. By following this guide, stakeholders will be able to integrate METR into their systems, ensuring compliance and operational efficiency.
 
 ### Audience
 
-This document is intended for system developers, IT professionals, transportation operators, and other stakeholders responsible for deploying or managing systems that consume METR data. It is also relevant for navigation system developers, vehicle manufacturers, public transportation agencies, and infrastructure managers who need to integrate electronic transportation regulations into their systems. Consultants, service providers, and legal experts involved in regulatory compliance and system design will also find this guide useful for supporting their clients' and stakeholders’ needs.
+This page is intended for system developers, IT professionals, transportation operators, and other stakeholders responsible for deploying or managing systems that consume METR data. It is also relevant for navigation system developers, vehicle manufacturers, public transportation agencies, and infrastructure managers who need to integrate electronic rules and regulations into their systems. Consultants, service providers, and legal experts involved in regulatory compliance and system design will also find this guide useful for supporting their clients' and stakeholders’ needs.
 
 ## What Are the Prerequisites for Deploying a METR Consumer System?
 

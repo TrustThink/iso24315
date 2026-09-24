@@ -1,3 +1,93 @@
+/* Shared figure, table, and breadcrumb styling from ISO TC 204 (TC204_Website).
+   Header chrome comes from the classic Material theme (indigo, Roboto, tabs). */
+
+.md-breadcrumb {
+  margin: 1rem 0;
+  font-size: 0.75rem;
+  color: slategray;
+}
+
+.md-breadcrumb a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+.md-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+figcaption,
+em.figcaption {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  max-width: 100%;
+  line-height: 1.4;
+}
+
+figure {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+}
+
+img.figure {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.md-typeset table {
+  border-collapse: collapse;
+}
+
+.md-typeset th,
+.md-typeset td {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 8px;
+}
+
+.md-typeset th:last-child,
+.md-typeset td:last-child {
+  border-right: none;
+}
+
+.md-typeset th:first-child,
+.md-typeset td:first-child {
+  border-left: none;
+}
+
+/* Keep diagrams with dark strokes readable. Inline SVG so diagram links stay clickable. */
+.md-typeset .diagram-light-bg {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+.md-typeset .diagram-light-bg > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.md-typeset .diagram-light-bg svg a {
+  cursor: pointer;
+}
+
+.md-typeset .diagram-light-bg svg a path {
+  pointer-events: all;
+}
+
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -16,20 +106,20 @@
 }
 
 html {
-    scroll-padding-top: 6rem; /* match fixed banner height */
-  }
+  scroll-padding-top: 6rem;
+}
 
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

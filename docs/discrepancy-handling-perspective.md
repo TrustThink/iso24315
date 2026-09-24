@@ -15,13 +15,13 @@
 
 ## Introduction
 
-### Purpose of Document
+### Purpose of Page
 
-This document serves as a guide for deploying and managing a Management of Electronic Traffic Regulations (METR) discrepancy handling system. It provides essential information for entities responsible for identifying, reporting, and resolving discrepancies in transportation regulations within the METR framework. The document outlines key prerequisites, maintenance requirements, data management, and policies to ensure the effective operation of the system. By focusing on these areas, the guide helps stakeholders build robust, interoperable systems that support the accurate implementation and enforcement of transportation regulations.
+This page serves as a guide for deploying and managing a Management of Electronic Traffic Regulations (METR) discrepancy handling system. It provides essential information for entities responsible for identifying, reporting, and resolving discrepancies in transportation regulations within the METR framework. The page outlines key prerequisites, maintenance requirements, data management, and policies to ensure the effective operation of the system. By focusing on these areas, the guide helps stakeholders build robust, interoperable systems that support the accurate implementation and enforcement of rules and regulations.
 
 ### Audience
 
-This document is intended for system administrators, IT professionals, transportation regulators, and other stakeholders responsible for deploying and operating METR discrepancy handling systems. It is also relevant for rule makers, policy makers, and legal experts who oversee transportation regulations and need to ensure the system's reliability and accuracy. Additionally, consultants and service providers working with transportation agencies will find this guide valuable for supporting their clients’ needs in managing regulatory discrepancies.
+This page is intended for system administrators, IT professionals, transportation regulators, and other stakeholders responsible for deploying and operating METR discrepancy handling systems. It is also relevant for rule makers, policy makers, and legal experts who oversee transportation regulations and need to ensure the system's reliability and accuracy. Additionally, consultants and service providers working with transportation agencies will find this guide valuable for supporting their clients’ needs in managing regulatory discrepancies.
 
 ## What Are the Prerequisites for Deploying a METR Discrepancy Handling System?
 

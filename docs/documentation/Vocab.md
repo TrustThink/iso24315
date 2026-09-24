@@ -2,8 +2,14 @@
 
 # 24315 METR-Vocab: Vocabulary
 
-This page provides the full text, links, and open discussions about the Vocab.
-!!! note 
+This page provides the full text, links, and open discussions about the Vocabulary as defined in ISO 24315-1. See the main ISO/TC 204 website for terms defined in [ISO 14812](https://isotc204.org/iso14812/latest/).
+
+!!! note "Website terminology vs ISO 24315-1"
+    On this website’s guidance pages, **rule** means legislative provisions (e.g., highway-code rules of the road), **regulation** means provisions established by a regulator (mandatory, advisory, or guidance), and **rules and regulations (R&R)** means both. The acronym **METR** remains Management of Electronic Traffic Regulations and is explained in the prose as applying to R&R.
+
+    The table below retains the **ISO 24315-1** wording, where *rule* is the broader umbrella term. Prefer the website convention in new guidance text; treat the table as the standards vocabulary when tracing requirements.
+
+!!! note
     Last modified on 2024-11-21 13:09
 
 | Section | ID | Term | Text Snippet | Discussion | Links| 

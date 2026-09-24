@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2218 1242" role="img" aria-labelledby="title desc">
+  <title id="title">METR system roles and interfaces</title>
+  <desc id="desc">Vector recreation of the supplied architecture diagram. Every labeled component and interface box links to a same-page kebab-case anchor.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#000"/>
+    </marker>
+    <style>
+      .box { stroke:#000; stroke-width:6; }
+      .centre { fill:#7eeed7; }
+      .vehicle { fill:#b9cdf5; }
+      .field { fill:#bdbdbd; }
+      .linkbox { fill:#4775c5; stroke:#214375; stroke-width:2; }
+      .wire { fill:none; stroke:#000; stroke-width:2.2; marker-end:url(#arrow); }
+      .both { fill:none; stroke:#000; stroke-width:2.2; marker-start:url(#arrow); marker-end:url(#arrow); }
+      .label { font-family:Georgia,'Times New Roman',serif; font-size:28px; font-weight:700; text-anchor:middle; }
+      .small-label { font-family:Georgia,'Times New Roman',serif; font-size:26px; font-weight:700; text-anchor:middle; }
+      .system-label { font-family:Arial,sans-serif; font-size:34px; text-anchor:middle; }
+      .if-label { font-family:Arial,sans-serif; font-size:38px; fill:#fff; text-anchor:middle; }
+      .hot:hover .box, .hot:focus .box { stroke:#1757b8; filter:brightness(.98); }
+      .hot { cursor:pointer; }
+      .badge-text { font-family:Arial,sans-serif; font-size:22px; text-anchor:middle; dominant-baseline:middle; }
+      .person { fill:#000; }
+    </style>
+    <g id="person-icon" class="person">
+      <circle cx="0" cy="-13" r="10"/><path d="M-8-5h16l4 17 14 7v8h-52v-8l14-7z"/>
+    </g>
+    <g id="centre-badge"><circle cx="0" cy="0" r="16" fill="#7eeed7" stroke="#222" stroke-width="1.5"/><text class="badge-text" y="1">C</text></g>
+    <g id="field-badge"><rect x="-13" y="-16" width="26" height="32" fill="#f8d89b" stroke="#333"/><text class="badge-text" y="1">F</text></g>
+    <g id="vehicle-badge"><path d="M-14-14H14L0 16Z" fill="#b9cdf5" stroke="#333" stroke-width="1.5"/><text class="badge-text" y="-3">V</text></g>
+    <g id="personal-badge"><path d="M0-16 16 0 0 16-16 0Z" fill="#fff29b" stroke="#333" stroke-width="1.5"/><text class="badge-text" y="1">P</text></g>
+  </defs>
+
+  <rect width="2218" height="1242" fill="#fff"/>
+
+  <!-- Legend -->
+  <g transform="translate(34 78)">
+    <text x="0" y="20" font-family="Arial,sans-serif" font-size="25" font-weight="700">Legend</text>
+    <use href="#centre-badge" x="12" y="45"/><text x="33" y="53" font-family="Arial,sans-serif" font-size="24">Centre</text>
+    <use href="#field-badge" x="12" y="83"/><text x="33" y="91" font-family="Arial,sans-serif" font-size="24">Field</text>
+    <use href="#personal-badge" x="12" y="120"/><text x="33" y="128" font-family="Arial,sans-serif" font-size="24">Personal</text>
+    <use href="#vehicle-badge" x="12" y="154"/><text x="33" y="162" font-family="Arial,sans-serif" font-size="24">Vehicle</text>
+  </g>
+
+  <!-- METR system and user-device boundaries -->
+  <rect x="1145" y="218" width="1029" height="558" fill="none" stroke="#1c3158" stroke-width="7" stroke-dasharray="29 21"/>
+  <text class="system-label" x="1660" y="262">METR System</text>
+  <rect x="1708" y="478" width="417" height="516" fill="#edf3ff" fill-opacity=".75" stroke="#1c3158" stroke-width="2"/>
+  <text class="small-label" x="1917" y="515">METR User</text><text class="small-label" x="1917" y="548">Device</text>
+
+  <!-- Connector network -->
+  <path class="wire" d="M573 121H255V574"/>
+  <path class="wire" d="M763 207V305"/>
+  <path class="both" d="M763 479V574"/>
+  <path class="both" d="M444 660H573"/>
+  <path class="both" d="M255 747V838"/>
+  <path class="wire" d="M950 328H1060V120H1174"/>
+  <path class="wire" d="M1174 365H950"/>
+  <path class="wire" d="M950 659H1062V392H1174"/>
+  <path class="wire" d="M950 659H1062V365H1174"/>
+  <path class="both" d="M1360 207V305"/>
+  <path class="both" d="M1360 479V574"/>
+  <path class="wire" d="M1550 392H1640V365H1730"/>
+  <path class="wire" d="M1730 365H1672V392H1550"/>
+  <path class="both" d="M1550 660H1730"/>
+  <path class="wire" d="M1626 910H1549"/>
+  <path class="wire" d="M1626 910V736H1708"/>
+  <path class="both" d="M1917 451V574"/>
+  <path class="both" d="M1917 747V812"/>
+  <path class="both" d="M1917 984V1048"/>
+
+  <!-- Clickable architecture boxes -->
+  <a class="hot" href="#rule-maker" xlink:href="#rule-maker" target="_top" aria-label="Rule Maker">
+    <rect class="box centre" x="573" y="35" width="377" height="172"/>
+    <text class="label" x="762" y="69"><tspan x="762">Rule</tspan><tspan x="762" dy="32">Maker</tspan></text>
+    <use href="#person-icon" x="610" y="166"/><use href="#centre-badge" x="927" y="57"/>
+  </a>
+
+  <a class="hot" href="#rule-implementation-agent" xlink:href="#rule-implementation-agent" target="_top" aria-label="Rule Implementation Agent">
+    <rect class="box centre" x="68" y="574" width="376" height="173"/>
+    <text class="label" x="256" y="608"><tspan x="256">Rule Implementation</tspan><tspan x="256" dy="32">Agent</tspan></text>
+    <use href="#person-icon" x="106" y="706"/><use href="#centre-badge" x="423" y="596"/>
+  </a>
+
+  <a class="hot" href="#maintenance-construction-management-centre" xlink:href="#maintenance-construction-management-centre" target="_top" aria-label="Maintenance and Construction Management Centre">
+    <rect class="box centre" x="68" y="838" width="376" height="173"/>
+    <text class="label" x="256" y="871"><tspan x="256">Maintenance &amp;</tspan><tspan x="256" dy="32">Construction</tspan><tspan x="256" dy="32">Management Centre</tspan></text>
+    <use href="#centre-badge" x="423" y="860"/>
+  </a>
+
+  <a class="hot" href="#metr-translation-agent" xlink:href="#metr-translation-agent" target="_top" aria-label="METR Translation Agent">
+    <rect class="box centre" x="573" y="305" width="377" height="174"/>
+    <text class="label" x="762" y="340"><tspan x="762">METR Translation</tspan><tspan x="762" dy="32">Agent</tspan></text>
+    <use href="#person-icon" x="610" y="438"/><use href="#centre-badge" x="927" y="328"/>
+  </a>
+
+  <a class="hot" href="#metr-verification-agent" xlink:href="#metr-verification-agent" target="_top" aria-label="METR Verification Agent">
+    <rect class="box centre" x="573" y="574" width="377" height="173"/>
+    <text class="label" x="762" y="608"><tspan x="762">METR Verification</tspan><tspan x="762" dy="32">Agent</tspan></text>
+    <use href="#person-icon" x="610" y="706"/><use href="#centre-badge" x="927" y="596"/>
+  </a>
+
+  <a class="hot" href="#metr-signing-agent" xlink:href="#metr-signing-agent" target="_top" aria-label="METR Signing Agent">
+    <rect class="box centre" x="1174" y="35" width="376" height="172"/>
+    <text class="label" x="1362" y="69"><tspan x="1362">METR Signing</tspan><tspan x="1362" dy="32">Agent</tspan></text>
+    <use href="#person-icon" x="1211" y="166"/><use href="#centre-badge" x="1527" y="57"/>
+  </a>
+
+  <a class="hot" href="#metr-regulation-system" xlink:href="#metr-regulation-system" target="_top" aria-label="METR Regulation System">
+    <rect class="box centre" x="1174" y="305" width="376" height="174"/>
+    <text class="small-label" x="1362" y="342">METR Regulation System</text>
+  </a>
+
+  <a class="hot" href="#metr-discrepancy-handling-system" xlink:href="#metr-discrepancy-handling-system" target="_top" aria-label="METR Discrepancy Handling System">
+    <rect class="box centre" x="1174" y="574" width="376" height="173"/>
+    <text class="label" x="1362" y="608"><tspan x="1362">METR Discrepancy</tspan><tspan x="1362" dy="32">Handling System</tspan></text>
+    <use href="#centre-badge" x="1527" y="596"/>
+  </a>
+
+  <a class="hot" href="#supporting-data-provider" xlink:href="#supporting-data-provider" target="_top" aria-label="Supporting Data Provider">
+    <rect class="box field" x="1174" y="824" width="376" height="173"/>
+    <text class="label" x="1362" y="859"><tspan x="1362">Supporting Data</tspan><tspan x="1362" dy="32">Provider</tspan></text>
+    <use href="#field-badge" x="1493" y="846"/><use href="#centre-badge" x="1527" y="846"/><use href="#vehicle-badge" x="1527" y="882"/>
+  </a>
+
+  <a class="hot" href="#metr-distribution-system" xlink:href="#metr-distribution-system" target="_top" aria-label="METR Distribution System">
+    <rect class="box field" x="1730" y="281" width="375" height="171"/>
+    <text class="label" x="1918" y="315"><tspan x="1918">METR Distribution</tspan><tspan x="1918" dy="32">System</tspan></text>
+    <use href="#field-badge" x="2050" y="303"/><use href="#centre-badge" x="2083" y="303"/><use href="#vehicle-badge" x="2083" y="338"/>
+  </a>
+
+  <a class="hot" href="#metr-consumer-system" xlink:href="#metr-consumer-system" target="_top" aria-label="METR Consumer System">
+    <rect class="box vehicle" x="1730" y="574" width="375" height="173"/>
+    <text class="label" x="1918" y="608"><tspan x="1918">METR Consumer</tspan><tspan x="1918" dy="32">System</tspan></text>
+    <use href="#vehicle-badge" x="2083" y="599"/>
+  </a>
+
+  <a class="hot" href="#metr-adapter-system" xlink:href="#metr-adapter-system" target="_top" aria-label="METR Adapter System">
+    <rect class="box vehicle" x="1730" y="812" width="375" height="172"/>
+    <text class="label" x="1918" y="846"><tspan x="1918">METR Adapter</tspan><tspan x="1918" dy="32">System</tspan></text>
+    <use href="#vehicle-badge" x="2083" y="837"/>
+  </a>
+
+  <a class="hot" href="#metr-user" xlink:href="#metr-user" target="_top" aria-label="METR User">
+    <rect class="box vehicle" x="1730" y="1048" width="375" height="172"/>
+    <text class="label" x="1918" y="1082">METR User</text>
+    <use href="#person-icon" x="1767" y="1181"/><use href="#vehicle-badge" x="2083" y="1073"/>
+  </a>
+
+  <!-- Clickable interface callouts -->
+  <a class="hot" href="#if-1" xlink:href="#if-1" target="_top" aria-label="IF 1"><path class="linkbox" d="M1594 407h70l7-40 20 40h0q12 0 12 12v58q0 13-13 13h-94q-13 0-13-13v-57q0-13 11-13z"/><text class="if-label" x="1643" y="462">IF 1</text></a>
+  <a class="hot" href="#if-2" xlink:href="#if-2" target="_top" aria-label="IF 2"><path class="linkbox" d="M2022 477l-74-18 74 38v51q0 13 13 13h95q13 0 13-13v-58q0-13-13-13z"/><text class="if-label" x="2083" y="530">IF 2</text></a>
+  <a class="hot" href="#if-3" xlink:href="#if-3" target="_top" aria-label="IF 3"><path class="linkbox" d="M1568 503h94q13 0 13 13v57q0 13-13 13h-7l-29 50-4-50h-54q-13 0-13-13v-57q0-13 13-13z"/><text class="if-label" x="1615" y="557">IF 3</text></a>
+  <a class="hot" href="#if-4" xlink:href="#if-4" target="_top" aria-label="IF 4"><path class="linkbox" d="M1183 484h95q13 0 13 13v5l70 21-70-4v35q0 13-13 13h-95q-13 0-13-13v-57q0-13 13-13z"/><text class="if-label" x="1230" y="538">IF 4</text></a>
+</svg>

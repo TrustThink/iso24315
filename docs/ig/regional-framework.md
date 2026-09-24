@@ -12,7 +12,7 @@ This guide is designed for regional government officials, transportation planner
 
 ### Need for Regional Implementation Guidance
 
-As METR systems become more widespread, regional implementation guides are essential to ensure interoperability across different jurisdictions. These guides provide a consistent framework that aligns with national and international standards while allowing for local customization. Without clear regional guidance, there is a risk of fragmented or incompatible systems that could undermine the effectiveness of METR, leading to potential safety issues, inefficiencies, and challenges in rule enforcement.
+As METR systems become more widespread, regional implementation guides are essential to ensure interoperability across different jurisdictions. These guides provide a consistent framework that aligns with national and international standards while allowing for local customization. Without clear regional guidance, there is a risk of fragmented or incompatible systems that could undermine the effectiveness of METR, leading to potential safety issues, inefficiencies, and challenges in regulation enforcement.
 
 ## Prerequisites for Starting a Regional METR Deployment
 
@@ -24,12 +24,12 @@ A reference architecture serves as a blueprint for the deployment of METR system
 
 Different options may include government agencies, private operators, or public-private partnerships, each with its own set of trade-offs. For instance, a government-operated distribution system may offer greater control and security, but could be slower to adapt to technological changes. Conversely, a private operator might bring innovation and efficiency but could raise concerns about availability, privacy, and charging for access to public safety information. Regional authorities must weigh these options carefully, considering factors such as cost, scalability, and regulatory compliance.
 
-### Policies for Rule Verification
+### Policies for Regulation Verification
 
-Independent verification of rules within the METR system offers significant benefits, including increased trust in the system, enhanced safety, and compliance with legal standards. However, it also presents challenges, such as the need for robust verification protocols, potential delays in rule implementation, and additional costs. Establishing clear policies for rule verification is crucial to balance these benefits and challenges, ensuring that rules are accurate, reliable, and effectively enforced while minimizing disruptions to the system.
+Independent verification of regulations within the METR system offers significant benefits, including increased trust in the system, enhanced safety, and compliance with legal standards. However, it also presents challenges, such as the need for robust verification protocols, potential delays in regulation implementation, and additional costs. Establishing clear policies for regulation verification is crucial to balance these benefits and challenges, ensuring that regulations are accurate, reliable, and effectively enforced while minimizing disruptions to the system.
 
 ### Policies for Deployment
 
 Regional policies related to METR deployment must address the trade-offs between centralized and decentralized approaches. For example, establishing an ITS directive that mandates the availability of certain categories of METR information across all regional agencies can promote uniformity and interoperability. However, it may limit the flexibility of local governments to tailor the system to their specific needs.
 
-Alternatively, allowing local governments to decide independently whether to deploy METR information and which rule categories to support provides greater customization and responsiveness to local conditions but could lead to inconsistencies and gaps in coverage. Regional authorities must carefully consider these trade-offs, aiming to create a policy framework that balances standardization with local autonomy, ensuring that METR deployment is both effective and adaptable to changing needs.
+Alternatively, allowing local governments to decide independently whether to deploy METR information and which regulation categories to support provides greater customization and responsiveness to local conditions but could lead to inconsistencies and gaps in coverage. Regional authorities must carefully consider these trade-offs, aiming to create a policy framework that balances standardization with local autonomy, ensuring that METR deployment is both effective and adaptable to changing needs.
