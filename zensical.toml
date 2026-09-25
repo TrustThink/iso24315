@@ -64,6 +64,10 @@ nav = [
     ]},
     { "METR Engineering Information" = [
       "metr-engineering-information.md",
+      { "Cybersecurity" = [
+    "cybersecurity.md",
+    { "Cybersecurity Use Cases" = "cybersecurity-use-cases.md" },
+]},
       { "Development Process" = [
         "development.md",
         "workshops.md",
