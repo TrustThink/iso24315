@@ -68,8 +68,15 @@ nav = [
       "workshops.md",
       { "Vocabulary" = "https://isotc204.org/iso24315-vocab/" },
       { "Cybersecurity" = [
-        "cybersecurity.md",
-        { "Cybersecurity Use Cases" = "cybersecurity-use-cases.md" },
+         "cybersecurity.md",
+          { "METR Threat, Vulnerability and Risk Assessment (TVRA)" = "metr-threat-vulnerability-risk-assessment.md" },
+   	  { "Cybersecurity Use Cases" = [
+                "cybersecurity-use-cases.md",
+                "trusted-metr-operations-uc.md",
+                "metr-trust-management-uc.md",
+                "metr-security-management-uc.md",
+    ]},
+
       ]},
       { "Traceability" = [
         "documentation/index.md",
