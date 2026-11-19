@@ -1,4 +1,4 @@
-# METR Transport Layer Security 
+# METR Transport Layer Security
 
 METR systems exchange information across organizational, jurisdictional, and network boundaries. These exchanges require protection against unauthorized disclosure, modification, replay, and impersonation while also ensuring that communicating systems are authorized to access the requested METR services and information.
 
@@ -19,6 +19,6 @@ The examples on this page are intended to clarify one implementation of the METR
 
 The figure below illustrates METR Transport Security Aligned with ISO 21177 and the conceptual interaction between the METR application, the METR security subsystem, and the ISO 21177 secure session services in both client and server roles.
 
-![METR Transport Security Aligned with ISO 21177](images\iso2177-tls.jpg)
+![METR Transport Security Aligned with ISO 21177](..\images\iso21177-tls.jpg)
 
 <figure><figcaption>METR Transport Security Aligned with ISO 21177</figcaption></figure>

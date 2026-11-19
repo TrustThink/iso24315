@@ -6,7 +6,7 @@
 
 ## Related pages
 
-- [Key components](key-components.md)
+- [Key functions](key-functions.md)
 - [Consumer perspective](consumer-perspective.md)
 - [Deployment scenarios](deployment-scenarios.md)
 - [Physical view](physical-view.md)

@@ -68,11 +68,11 @@ The reference architecture splits that work into two roles, which may be filled 
 - The **collector** role obtains regulations from the regulation systems that hold them, often across a wide area such as a country. The system may also act in the distributor role, can send data to one or more other distribution systems, or both.
 - The **distributor** role delivers regulations to consumer systems on-board vehicles. This can be a government-based distribution system or a commercial provider, such as navigation services, vehicle manufacturers, fleet systems, and similar providers.
 
-The [regional body](regional-body-perspective.md) should provide guidance on preferred models for collectors and distributors in a region. The [key components](key-components.md) page describes how these systems sit in the reference architecture.
+The [regional body](regional-body-perspective.md) should provide guidance on preferred models for collectors and distributors in a region. The [key functions](key-functions.md) page describes how these systems sit in the reference architecture.
 
 ### Collection from rule makers
 
-The collector role is intended to reach across multiple regulation systems and consolidate R&amp;Rs into a single data store to facilitate access for the distributor role. 
+The collector role is intended to reach across multiple regulation systems and consolidate R&amp;Rs into a single data store to facilitate access for the distributor role.
 
 Rather than establishing a separate distribution system acting as a collector of multiple regulation systems, a region may establish a service discovery service such that distribution systems can discover and connect to all of the registered regulation systems within a geographic area. The region should establish guidelines on how this should work within its region.
 
@@ -83,7 +83,7 @@ A collector needs to clearly indicate the following, so that other systems are n
 - which regulation categories and vehicle types are included
 - which regulation systems are connected, and under what agreement
 
-Pre-announced R&amp;Rs, such as most rules issued by a legislature or regulations issued by a road authority, are known before they take effect and can be collected on a planned cycle. An emergent regulation, such as a closure issued by a road operator or an emergency responder, ha to be collected quickly enough that a user already on the road and in the vicinity of the regulation can receive it. 
+Pre-announced R&amp;Rs, such as most rules issued by a legislature or regulations issued by a road authority, are known before they take effect and can be collected on a planned cycle. An emergent regulation, such as a closure issued by a road operator or an emergency responder, ha to be collected quickly enough that a user already on the road and in the vicinity of the regulation can receive it.
 
 ### Regional Guidance
 

@@ -12,7 +12,7 @@ Every METR component system is hosted by an entity that plans, develops, deploys
 ## Deployment considerations
 
 Deploying a METR component system requires meeting several prerequisites to ensure successful implementation. These include 
-1.	Establishing the necessary infrastructure: METR component systems require secure, reliable and safe operational environments, network connectivity, and secure data storage solutions. Each deployment will need to specift how the infrastructure will be provided.
+1.	Establishing the necessary infrastructure: METR component systems require secure, reliable and safe operational environments, network connectivity, and secure data storage solutions. Each deployment will need to specify how the infrastructure will be provided.
 2.	Scope and size: Each METR component system will need to be designed to handle the specific types of regulations and vehicles that will be supported. Understanding the target market and the types of users who will rely on the system component is critical, as it influences the system’s design and functionality.
 3.	Outsourcing vs. in-house operations: Each METR system Assess how much of the METR component system will be managed in-house versus outsourced, considering factors such as cost, expertise, and control.
 4.	Compatibility and interoperability: Each METR system component must be compatible with the existing METR component systems per the policies established by the regional body, including meeting minimal requirements for interoperability. Interoperability is a key factor in the success of a METR component  system. Minimal requirements include adherence to standardized data formats, protocols, and communication interfaces. 
@@ -102,5 +102,5 @@ The documentation of the system should include system-level architecture that sp
 
 - [System of systems](system-of-systems.md)
 - [Jurisdictional management perspective](jurisdictional-management-perspective.md)
-- [Key components](key-components.md)
+- [Key functions](key-functions.md)
 - [METR engineering information](metr-engineering-information.md)

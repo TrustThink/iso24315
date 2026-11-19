@@ -5,6 +5,7 @@
 METR is specified as a global standard, but each region of the world is expected to adopt their own guidelines and policies for deploying METR. In an ideal "standardized" world, all regions would adopt identical guidelines and policies, but the real world is more complicated. Different regions have different laws, regulations, policies, historical contexts, and preferences that lead to different design decisions. This page describes the regional environment for METR.
 
 Allowing for variations in regional policies and practices results in complications for interoperability. The concept of global regions is intended to provide:
+
 - seamless interoperable travel within a region,
 - allowing flexibility in deployment within a region to accommodate local policies and practices, and
 - providing a framework for cross-region transitions when travel occurs between regions.
@@ -25,7 +26,7 @@ Those region-specific policies are refinements of the global standard, not a sec
 
 ## Related pages
 
-- [What is METR](what-is-metr.md)
+- [Home](index.md)
 - [Regional body perspective](regional-body-perspective.md)
 - [Regional framework](regional-framework.md)
 - [Regional guidance](ig/regional-guidance.md)

@@ -18,7 +18,7 @@ Regulatory processes limit METR in several recurring ways.
 
 **Implementation and activation are different.** An R&R can be approved and implemented (i.e., TCDs installed) without it being active. Many R&Rs are conditional. For example, lower speed limits when it is raining, different parking restrictions by time of day, chain requirements when there is signifiant snow fall. R&Rs can also be dormant, i.e., complete sets of R&Rs that are not active without a ruling from an authority such as for emergency response plans). These regulations only become active when their conditions are met. METR defines a standard set of [regulation states](tro-regulation-states.md) to ensure that all parties understand the status of a regulation. METR is designed to provide approved regulations to users along with the conditions that must be met for the regulation to be active. It is the responsibility of the METR user device or METR user to determine if the regulation is active within the context of use (e.g., in the case of pre-trip planning, the relevance of a scheduled regulation will be dependent upon the user's time of arrival at the regulated location).
 
-**Conditional regulations require supporting data.** When the activation of an R&R is conditional upon external conditions, the user needs to couple the definition of the R&R with supporting data to determine if the R&R is active. To ensure a consistent and unambiguous interpretation, the R&R should identify acceptable supporting data providers. For example, if a lower speed limit applies when it is raining, the R&R can indicate that the condition applies whenever the wipers are active on the vehicle. A parking restrictions by time of day can reference GNSS time as a valid time source. 
+**Conditional regulations require supporting data.** When the activation of an R&R is conditional upon external conditions, the user needs to couple the definition of the R&R with supporting data to determine if the R&R is active. To ensure a consistent and unambiguous interpretation, the R&R should identify acceptable supporting data providers. For example, if a lower speed limit applies when it is raining, the R&R can indicate that the condition applies whenever the wipers are active on the vehicle. A parking restrictions by time of day can reference GNSS time as a valid time source.
 
 **Different processes move at different speeds and produce different legal packages.** R&Rs can be issued through legislative acts, permanent design documents, or orders issued by road operators, maintenance personnel, or emergency responders. Each source has its own evidentiary, consultation, approval, and recording requirements. While the distinction is generally irrelevant for the METR user, it impacts how regulations are managed and distributed to ensure efficient and timely delivery of complete and accurate information.
 
@@ -61,7 +61,7 @@ These actors often keep separate drafting tools and separate approval chains. ME
 
 ## Related pages
 
-- [What is METR](what-is-metr.md)
+- [Home](index.md)
 - [Rule maker perspective](rule-maker-perspective.md)
 - [What is a TRO?](tro-what-is-a-tro.md)
 - [Jurisdictional entities and rule makers](tro-jurisdictional-entity.md)

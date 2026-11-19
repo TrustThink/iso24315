@@ -3,7 +3,7 @@
 <div class="draft4-watermark" aria-hidden="true"></div>
 
 <div class="diagram-light-bg" markdown="0">
---8<-- "images/physical-view.svg"
+--8<-- "./images/physical-view.svg"
 </div>
 
 The diagram is the **physical view** of the METR system of systems with descriptions of each component provided below. The diagram identifies the major actors within a METR deployment and the relationships between them.
@@ -15,7 +15,8 @@ The diagram is the **physical view** of the METR system of systems with descript
 Prior to electronic regulations, the traditional regulatory process consisted of a rule maker, a regulation implementation agent, and a maintenance & construction management centre. These components are still present in the METR system, but are supplemented with the METR system of systems.
 
 ### Rule Maker
-The rule maker is the originating actor in the METR chain of trust. Rule makers are responsible for defining the regulations that govern vehicle behaviour within a jurisdiction. Rule makers include legislative bodies, road authorities, road operators, emergency response personnel, and campus authorities. The (legal) regulations that they define are provided to the METR translation agent and to the implementation agent. 
+
+The rule maker is the originating actor in the METR chain of trust. Rule makers are responsible for defining the regulations that govern vehicle behaviour within a jurisdiction. Rule makers include legislative bodies, road authorities, road operators, emergency response personnel, and campus authorities. The (legal) regulations that they define are provided to the METR translation agent and to the implementation agent.
 
 ### Regulation Implementation Agent
 
@@ -24,6 +25,7 @@ The regulation implementation agent is a person who takes legal regulations from
 Implementing a regulation does not necessarily mean that it is active (e.g., a speed limit for a school zone might only be `active` a few hours each day).
 
 ### Maintenance & Construction Management Centre (MCMC)
+
 Centre that manages the installation, maintenance, and status of traffic control devices. It feeds **TCD status** into METR (what was posted, changed, or removed) so electronic data can be checked against the roadside. Also receives METR information so crews know what should be on the ground.
 
 ## METR Translation Components
@@ -32,7 +34,7 @@ The regulations issued by a rule maker need to be entered into the METR regulati
 
 ### METR Translation Agent
 
-The METR translation agent a person who accepts regulations from rule makers and translates them into the structured, machine-readable format, called the **electronic regulation**, used throughout the rest of the METR system. The translation agent works closely with the METR verification agent to verify each electronic regulation. The translation agent records the electronic regulation in the METR regulation system and coordinates with the METR verification agent and METR signing agent to ensure that the regulation is verified and signed. 
+The METR translation agent a person who accepts regulations from rule makers and translates them into the structured, machine-readable format, called the **electronic regulation**, used throughout the rest of the METR system. The translation agent works closely with the METR verification agent to verify each electronic regulation. The translation agent records the electronic regulation in the METR regulation system and coordinates with the METR verification agent and METR signing agent to ensure that the regulation is verified and signed.
 
 ### METR Verification Agent
 
@@ -68,7 +70,7 @@ The METR user device is a physical host for the METR consumer system, which is a
 
 ### METR Adapter System
 
-The METR adapter system sits between the METR consumer system and the end METR user, determining which electronic regulations are currently active  (e.g., based on current supporting data) and relevant to the current situation (e.g., based on the vehicle's location, speed, and parameters set by the user). It then presents these regulations to the user in a form that the user can efficiently use. 
+The METR adapter system sits between the METR consumer system and the end METR user, determining which electronic regulations are currently active  (e.g., based on current supporting data) and relevant to the current situation (e.g., based on the vehicle's location, speed, and parameters set by the user). It then presents these regulations to the user in a form that the user can efficiently use.
 
 ## Supporting Data Provider
 
@@ -86,7 +88,7 @@ In some cases, interfaces are non-electronic or can be custom to a deployment; i
 
 ### IF 1: Regulation System -> Distribution System <a id="if-1"></a>
 
-Distribution systems will typically need to collect regulations from multiple regulation systems. To facilitate integration, each region deploying METR should standardize the interface been regulation systems and distribution systems. 
+Distribution systems will typically need to collect regulations from multiple regulation systems. To facilitate integration, each region deploying METR should standardize the interface been regulation systems and distribution systems.
 
 ### IF 2: Distribution System -> Consumer System <a id="if-2"></a>
 

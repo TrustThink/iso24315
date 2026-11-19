@@ -21,7 +21,7 @@ In addition to the issues discussed on this page, stakeholders of the regulation
 
 ## Position within the reference architecture
 
-The regulation system is the catalogue. Rule makers define regulations, which are either natively in or are converted into an electronic form, verified, and stored in the regulation system. The electronic regulations are then provided to the distribution systems to deliver to METR user systems. The regulation system also receives discrepancy reports, which are used to correct the electronic regulations or traffic control devices, as needed. 
+The regulation system is the catalogue. Rule makers define regulations, which are either natively in or are converted into an electronic form, verified, and stored in the regulation system. The electronic regulations are then provided to the distribution systems to deliver to METR user systems. The regulation system also receives discrepancy reports, which are used to correct the electronic regulations or traffic control devices, as needed.
 
 ![The METR regulation system between rule makers, distribution, and discrepancy handling](images/concept-arch.png)
 
@@ -43,11 +43,11 @@ Deploying a METR regulation system requires meeting several prerequisites to ens
 
 ## Who may publish, and how far that authority goes
 
-The operator of the regulation system is responsible for setting the policies that determine **who** may define **which** regulations **where** and with **what** authority. 
+The operator of the regulation system is responsible for setting the policies that determine **who** may define **which** regulations **where** and with **what** authority.
 
 - **Who**: The operator needs to identify the jurisdictional entities to be supported by the regulation system and then identify each rule maker authorized by the entity, and the representatives authorized by the rule maker. Finally, the regulation system needs to identify how it will authenticate the representatives of the rule makers when they publish regulations.
 - **Which**: The operator needs to identify the regulation type categories that are supported by the regulation system for defined geographic areas and to what extent permanent, temporary, and emergent regulations are supported.
-- **Where**: The operator needs to identify the jurisdictional boundaries of each recognized jurisdictional entity and rule maker. Rule makers are not allowed to define electronic regulations outside their rule maker boundaries and the rule maker boundaries cannot extend beyond the jurisdictional boundaries of its parent jurisdictional entity. The security certificate on the electronic regulation should indicate the jurisdictional boundaries of the rule maker so that the receiving system can validate the legitimacy of the regulation. 
+- **Where**: The operator needs to identify the jurisdictional boundaries of each recognized jurisdictional entity and rule maker. Rule makers are not allowed to define electronic regulations outside their rule maker boundaries and the rule maker boundaries cannot extend beyond the jurisdictional boundaries of its parent jurisdictional entity. The security certificate on the electronic regulation should indicate the jurisdictional boundaries of the rule maker so that the receiving system can validate the legitimacy of the regulation.
 - **What**: The operator needs to identify the level of authority granted to each rule maker. This might be the authority to establish regulations that are enforceable by law, the authority to establish regulations that are enforced by the rule maker, or the authority to establish advisory regulations that can be considered in the case of a collision, but are not considered a primary offence.
 
 ### Types of entities to be supported
@@ -73,7 +73,7 @@ While each global region and locale will need to establish its own policies, it 
 4. clear expectations for data quality and completeness;
 5. a way to transfer responsibility for the regulations if and when a campus is sold or transferred; and
 6. a way to handle discrepancies and corrections when they are reported.
- 
+
 Hosts of regulation systems should realize that small rule makers are unlikely to establish their own regulation system; if they are unable to post to the regulation system used by their parent jurisdiction, their regulations likely will not be available within METR. Even if they are able to enter their regulations, smaller campuses are less likely provide and update their electronic regulations. For the trustworthiness of METR, it is important for the regulation system to be able to clearly communicate the limits of electronic regulation availability and quality to end users.
 
 ### Onboarding before anyone can publish
@@ -110,7 +110,7 @@ When distributing electronic regulations, the regulation system must include a r
     - acceptable supporting data providers to determine if conditions are met
 
 - metadata about the provisioning of the electronic regulation:
-    - a timestamp of when the electronic regulation was obtained from the regulation system 
+    - a timestamp of when the electronic regulation was obtained from the regulation system
     - the freshness period for the electronic regulation
 
 ## Verifying the electronic regulation
@@ -130,13 +130,13 @@ Every regulation should follow the same path on the hosted system. The extent of
 
 ### Published regulations must indicate completeness
 
-The provision of a partial percentage of traffic regulations can lead to confusion and reduced trust, unless systems are informed of the limitations of the data. For example, if a city provides some stop sign locations but not others, users might assume that any location not marked with a stop sign does not have one, creating a safety issue. 
+The provision of a partial percentage of traffic regulations can lead to confusion and reduced trust, unless systems are informed of the limitations of the data. For example, if a city provides some stop sign locations but not others, users might assume that any location not marked with a stop sign does not have one, creating a safety issue.
 
 METR is designed to follow the existing structures of how R&Rs&mdash;each R&R defined by rule maker is to be captured within the system as a distinct record that can be managed. As a result, there are three possibilities for any location:
 
 1. The location does not have any regulations defined.
-3. The location has regulations defined and all of these are available within METR.
-2. The location has regulations defined, but not all of them are available within METR.
+2. The location has regulations defined and all of these are available within METR.
+3. The location has regulations defined, but not all of them are available within METR.
 
 Given the number of R&Rs that can exist for a jurisdiction, it is likely that some regulations will be published before others. To prevent mis-interpretation of the provided information while improving the benefits of partially entered data, METR modularizes the data so that a rule maker can indicate whether all regulations of a specific type or defined area (which can be a sub-area of a jurisdiction) are available within METR. For example, a rule maker can indicate that all stop signs for a particular subdivision are available within METR. Before a regulation category is published as electronically trustworthy, the rule maker is responsible for ensuring that all regulations of that category in that area are available within METR.
 
@@ -150,7 +150,7 @@ The host of the regulation system needs to be aware of the regional policies tha
 
 ### Identifying a freshness period for published regulations
 
-Change is inevitable; while many individual regulations are fairly stable, the number of regulations that exist result in constant changes to the full set of regulations for any large jurisdictional area. However, there are time delays between a change being approved and implemented as well as between the time that a change is approved, entered into the regulation system, provided to the distribution system, and distributed to the user. Likewise, complexities in the communication environment result in the user in not necessarily having access to the latest regulation information. Nonetheless, the user needs to know whether the information that they have is still trustworthy, METR calls this the **freshness period**. 
+Change is inevitable; while many individual regulations are fairly stable, the number of regulations that exist result in constant changes to the full set of regulations for any large jurisdictional area. However, there are time delays between a change being approved and implemented as well as between the time that a change is approved, entered into the regulation system, provided to the distribution system, and distributed to the user. Likewise, complexities in the communication environment result in the user in not necessarily having access to the latest regulation information. Nonetheless, the user needs to know whether the information that they have is still trustworthy, METR calls this the **freshness period**.
 
 The host of the regulation system needs to define a policy that establishes a viable freshness period for distributed electronic regulations. This policy should be communicated to the rule makers and to the distribution systems of the regulation system as a part of the respective agreements. The freshness period impacts how early the rule maker needs to submit a regulation for distribution and how long the consumer system should keep the regulation available for use. Any regulation that is implemented before the time defined by the signing of the electronic regulation plus the freshness period should be treated as an **emergent regulation**. If the jurisdiction claims to publish emergent regulations, it it is responsible for ensuring the emergent regulations are published through the defined emergent regulation distribution process as announced.
 
@@ -184,4 +184,4 @@ A check by someone other than the person who entered the regulation raises confi
 - [Jurisdictional management perspective](jurisdictional-management-perspective.md)
 - [Rule maker perspective](rule-maker-perspective.md)
 - [Regulatory environment](regulatory-environment.md)
-- [Key components](key-components.md)
+- [Key functions](key-functions.md)

@@ -80,7 +80,7 @@ In summary: METR's system-of-systems nature is not a documentation convenience. 
 
 ## Related Pages
 
-- [Key components](key-components.md) — the four major METR component systems
+- [Key functions](key-functions.md) — the four major METR component systems
 - [Physical view](physical-view.md) — actors and interfaces across organizational boundaries
 - [Perspectives and guidance](perspectives.md) — stakeholder views, including system management
 - [Regional guidance](regional-body-perspective.md) — why regional frameworks are needed for interoperability

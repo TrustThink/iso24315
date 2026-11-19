@@ -68,7 +68,7 @@ The regulation system should provide for independent verification of electronic 
 However, METR allows for continued synchronization between the electronic and physical worlds through two primary mechanisms:
 
 1. **TCD status from field operations** — MCMC and related field systems notify METR when devices are newly installed, changed, or removed, supporting verification that electronic records match what was implemented.
-2. **Discrepancy reporting from users** — METR consumer and adapter systems can report suspected conflicts between electronic regulations and observed TCDs (or between TCDs themselves), typically with location, time, type, and optional supporting evidence such as imagery or sensor readings. See the [functional view](functional-view.md#detecting-and-reporting-discrepancies) and [discrepancy handling](key-components.md) descriptions.
+2. **Discrepancy reporting from users** — METR consumer and adapter systems can report suspected conflicts between electronic regulations and observed TCDs (or between TCDs themselves), typically with location, time, type, and optional supporting evidence such as imagery or sensor readings. See the [functional view](functional-view.md#detecting-and-reporting-discrepancies) and [discrepancy handling](key-functions.md) descriptions.
 
 ## Supporting Conditional Regulations
 

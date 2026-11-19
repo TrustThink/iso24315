@@ -14,7 +14,7 @@
         4. Provision of emergent regulations (e.g., work zones)
         5. As-built refinement of database (e.g., discrepancy management)
 
-The METR implementation guides are being developed as a resource for the METR community to facilitate deployments, to allow users to share experiences, and to [allow systems to work together](../key-components.md).
+The METR implementation guides are being developed as a resource for the METR community to facilitate deployments, to allow users to share experiences, and to [allow systems to work together](../key-functions.md).
 
 Each implementation guide is presented from the perspective of one of the entities or connections in the following diagram.
 

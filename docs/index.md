@@ -26,31 +26,16 @@
     METR provides users with geo-specific, trustworthy, timely, authoritative, machine-interpretable **<u>[rules](https://isotc204.org/iso24315-vocab/latest/terms/rule/)</u> and <u>[regulations](https://isotc204.org/iso24315-vocab/latest/terms/regulation/)</u> (R&amp;Rs)** established by jurisdictional entities
 
 !!! note
-    This website uses the [METR vocabulary](https://isotc204.org/iso24315-vocab/latest/) to define key terms. This website includes updates to ISO 24315-1:2025 that are not yet approved by ISO, but will be submitted for consideration for teh next edition of the standard.
+    This website uses the [METR vocabulary](https://isotc204.org/iso24315-vocab/latest/) to define key terms. This website includes updates to ISO 24315-1:2025 that are not yet approved by ISO, but will be submitted for consideration for the next edition of the standard. Importantly, the revised terminology includes the following:
 
-## The Challenge
+    | Term | Revised meaning |
+    | --- | --- |
+    | **[rule](https://isotc204.org/iso24315-vocab/latest/terms/rule/)** | Legislative provisions (for example, highway/road-code **[rules of the road](https://isotc204.org/iso24315-vocab/latest/terms/rules%20of%20the%20road/)**) |
+    | **[regulation](https://isotc204.org/iso24315-vocab/latest/terms/regulation/)** | Provisions established by a regulator, whether mandatory, advisory, or guidance |
+    | **[rules and regulations](https://isotc204.org/iso24315-vocab/latest/terms/rule%20or%20regulation/)** (**R&amp;Rs**) | The combined set of both |
 
-The modern driving experience is rapidly evolving. The use of navigation systems is extremely widespread and the adoption of Level 1-3 Automated Driving Systems (ADS) continues to expand. However, there are challenges in moving into Level 4 and 5 ADS. For the most part, current systems still rely upon a human driver in the loop due to challenges in consistently and accurately recognizing and following rules and regulations (R&amp;Rs).
 
-Most users are familiar with the problems. Systems leveraging databases face challenges in maintaining up-to-date information. As a result, many users of these systems have experienced their systems reporting an erroneous speed limit.
-
-![Example of database error](images/SpeedLimitDiscrepancy.png)
-
-<figure><figcaption>Example of database error</figcaption></figure>
-
-Video image processing systems also have challenges. Not only can signs be obscured, but signs can sometimes be misinterpreted.
-
-![Video image processing error](images/VideoProcessingError.png)
-
-<figure><figcaption>Example of video image processing error</figcaption></figure>
-
-## Limitations of the Status Quo
-
-These errors can lead to drivers unintentionally violating the intended R&amp;Rs; however, at present, the driver is still responsible for catching these inaccuracies and ensuring that the vehicle is operated in a safe and compliant manner. Migrating to Level 4 and Level 5 ADS requires a process that prevents these errors from happening. While there are some Level 4 Automated Driving Systems in operation, they have operational design domains (ODDs) that are limited to areas where the operating entities ensure that all R&amp;Rs are properly understood. This type of solution can work for prototype and early deployments, but is not scalable for large-scale use. To achieve large scale deployments, the industry needs a way to provide R&amp;Rs to vehicles in a trustworthy, electronic manner.
-
-If these errors persist, users will lose trust in driving automation and information systems and deployment of life-saving technologies will be delayed.
-
-## The METR Solution
+METR is a [system of systems](system-of-systems.md) that ensures digital rules and regulations are communicated dynamically across systems, infrastructure, and end users. Importantly, METR authenticates and secures these communications in real time. This facilitates interoperability that is trustworthy, safe and effective.
 
 <div class="video-container">
     <iframe
@@ -65,20 +50,37 @@ If these errors persist, users will lose trust in driving automation and informa
     </iframe>
 </div>
 
-<figure><figcaption>METR solution</figcaption></figure>
+<figure><figcaption>METR</figcaption></figure>
 
-<div class="button-row" markdown="span">
+## Scope of R&R covered by METR
 
-[METR Vision](METRVision.pdf "A 13-page PDF describing METR"){ .md-button .md-button--primary target="_blank" }
-[Vocabulary](https://isotc204.org/iso24315-vocab/latest/ "Definitions for key terms used in METR"){ .md-button .md-button--primary }
-[Overview Presentation](METROverview.pdf "A 36-slide presentation describing METR"){ .md-button .md-button--primary target="_blank" }
-[Discussion forum](https://github.com/ISO-TC204/iso24315/discussions){ .md-button .md-button--primary target="_blank" }
+**Rules and regulations (R&R)** related to using the surface transport infrastructure include:
 
-</div>
+- Virtually all types of R&R, including those:
+    - Published in the highway code (rules)
+    - Established by regulators as mandatory, advisory, or guidance regulations
+    - Posted with signs
+    - Marked on the roadway (i.e., pavement markings)
+    - Indicated through other traffic control devices (e.g., gates)
+- Virtually all modes of travel, including R&R for:
+    - Motor vehicles (i.e., self-propelled road vehicles)
+    - Non-motorized road vehicles (e.g., horse and buggy)
+    - Vehicles that do not normally mix with motor vehicles (e.g., pedal cycles, e-scooters, public-area mobile robots)
+    - Foot traffic
+- Virtually all surface transport facilities, including R&R for the use of:
+    - Roads
+    - Auxiliary lanes (e.g., cycle lanes)
+    - Footpaths
+    - Pedestrian plazas
+    - Indoor environments (e.g., for PMRs)
 
-METR defines a complete, end-to-end (i.e., from rule-maker to user) approach to managing and distributing R&amp;Rs. METR's holistic approach enables the secure electronic dissemination of trustworthy R&amp;Rs, ensuring that all stakeholders and their driving and navigation support systems have access to current R&amp;Rs. The system can be used to disseminate all [types of regulations](what-is-metr.md), including regulatory, advisory, and guidance information, as well as rules of the road, as defined in the highway code. The technology will assist in both improving the quality of information provided to human drivers as well as enabling better trust of Automated Driving Systems (ADS).
+METR is intended to support virtually any rule or regulation that needs to be conveyed to virtually any transport user. The attached graphic depicts R&R for freight vehicles, ride sharing, kerbside usage, micromobility operations, vulnerable road users (VRUs), public transport usage, lane usage, public-area mobile robots (PMRs), and road works. This information and more needs to be conveyed to all transport user systems; sample user systems include nomadic devices, PMRs, driver support systems, and ADS-equipped vehicles.
 
-Enabling the trustworthy distribution of electronic regulations results in a complex system of systems, where the components are acquired and managed by independent entities but are still interoperable. The reference architecture for METR is defined in ISO 24315-3 and summarized in the [physical view](physical-view.md).
+![Illustration of diverse transport regulations and user systems](images/streetscape.png)
+
+<figure><figcaption>Illustration of diverse transport regulations and user systems</figcaption></figure>
+
+As driving automation systems become more common, the importance of providing trustworthy regulations to the public is becoming more critical.
 
 ## Purpose of this Website
 

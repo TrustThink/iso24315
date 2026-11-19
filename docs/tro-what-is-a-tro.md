@@ -12,7 +12,7 @@ The highway code generally identifies the **rule makers** that are authorized to
 For example, the highway code can designate the road authority as a regulator for who can issue TROs regarding stop signs, speed limits, and other traffic regulations. It can also designate emergency response organizations as regulators who can issue a more limited set of temporary TROs regarding traffic control during an incident.
 
 <div class="diagram-light-bg" markdown="0">
---8<-- "images/rr-terms.svg"
+--8<-- "./images/rr-terms.svg"
 </div>
 
 <figure><figcaption>Highway code and TROs</figcaption></figure>

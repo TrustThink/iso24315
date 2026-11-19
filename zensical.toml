@@ -16,21 +16,32 @@ nav = [
   { "TC204 on ISO.org" = "https://www.iso.org/committee/54706.html" },
   { "TC 204 Home" = "https://isotc204.org/" },
   { "METR" = [
-    { "Management of Electronic Traffic Regulations" = "index.md" },
-    { "What is METR" = "what-is-metr.md" },
-    { "METR Environment" = [
-      "metr-environment.md",
-      "regulatory-environment.md",
-      "transport-environment.md",
-      "roadway-environment.md",
-      "communications-environment.md",
-      "regional-environment.md",
-      "need-for-trustworthiness.md",
-      "functional-view.md",
+    { "Context" = [
+      { "Management of Electronic Traffic Regulations" = "index.md" },
+      "challenge.md",
+      "tiered-approach.md",
+      "solution.md",
+      { "Resources" = [
+        { "Vocabulary" = "https://isotc204.org/iso24315-vocab/" },
+        { "Vision" = "METRVision.pdf" },
+        { "Overview Presentation" = "METROverview.pdf" },
+        { "Discussion forum" = "https://github.com/ISO-TC204/iso24315/discussions" },
+      ]},
+      { "Development Process" = "development.md"},
+      { "METR Environment" = [
+        "metr-environment.md",
+        "regulatory-environment.md",
+        "transport-environment.md",
+        "roadway-environment.md",
+        "communications-environment.md",
+        "regional-environment.md",
+        "need-for-trustworthiness.md",
+      ]},
     ]},
-    { "Key Components" = [
-      { "Key Components" = "key-components.md"},
+    { "Key Functions" = [
+      { "Key Functions" = "key-functions.md"},
       { "A System of Systems" = "system-of-systems.md"},
+      { "Functional View" = "functional-view.md" },
       "physical-view.md",
     ]},
     { "Possible Deployment Scenarios" = "deployment-scenarios.md" },
@@ -63,9 +74,7 @@ nav = [
     ]},
     { "METR Engineering Information" = [
       "metr-engineering-information.md",
-      { "Development Process" = "development.md"},
       "workshops.md",
-      { "Vocabulary" = "https://isotc204.org/iso24315-vocab/" },
       { "Cybersecurity" = [
          "cybersecurity.md",
           { "METR Threat, Vulnerability and Risk Assessment (TVRA)" = "metr-threat-vulnerability-risk-assessment.md" },

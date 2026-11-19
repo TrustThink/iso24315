@@ -5,7 +5,7 @@
 METR defines how traffic laws and regulations can be transformed into geo-specific, trustworthy, machine-interpretable data that vehicles, apps, and other transport systems can rely on. The figure, from ISO/TR 24315-2, is the functional view of the METR reference architecture. Clicking on any circle will jump to the segment of text that explains the specific function.
 
 <div class="diagram-light-bg" markdown="0">
---8<-- "images/functional_view.svg"
+--8<-- "./images/functional_view.svg"
 </div>
 
 A **rule maker** enacts legal regulations. Those regulations are translated, checked, approved, stored, and distributed. A **transport user** (driver, fleet manager, or automated vehicle) requests the regulations that apply, combines them with supporting data (e.g., location, time, environmental conditions), and follows what is currently relevant. If any inconsistencies are detected between the electronic regulations and physical traffic control devices, the user can report a discrepancy so the catalogue can be corrected.
@@ -31,6 +31,7 @@ Ideally, regulations should be verified by an independent third party to ensure 
 Verified regulations still need formal sign-off from an authority with the power to publish them. This function is the governance checkpoint: a designated approver reviews and authorizes the regulation before it's released for distribution, ensuring accountability for what enters the system.
 
 ### Distribute regulations to users
+
 Approved regulations are packaged for a place and a need (e.g., route, vehicle class, regulation type) and sent to METR user devices. Users can request regulations; the distributor returns what applies.
 
 ## Refining to find relevant regulations
@@ -49,11 +50,11 @@ The METR system needs to obtain data from the sensor or other external data sour
 
 ### Identify relevant regulations
 
-The METR system needs to integrate the relevant current regulations with the supporting data to determine which regulations are active and relevant to the current situation. 
+The METR system needs to integrate the relevant current regulations with the supporting data to determine which regulations are active and relevant to the current situation.
 
 ### Present relevant regulations
 
-Once the applicable regulations are identified, they need to be presented to the user of the data in an appropriate form. The could be a person, an Automated Driving System (ADS), driver support system, etc. 
+Once the applicable regulations are identified, they need to be presented to the user of the data in an appropriate form. The could be a person, an Automated Driving System (ADS), driver support system, etc.
 
 ## Detecting and Reporting Discrepancies
 
@@ -75,7 +76,7 @@ This function manages unverified discrepancy reports and groups them into a sing
 
 ### Report discrepancies
 
-This function flags the consolidated reports to be resolved once they satisfy  defined criteria (e.g., a number of unverified reports within a specified time period). 
+This function flags the consolidated reports to be resolved once they satisfy  defined criteria (e.g., a number of unverified reports within a specified time period).
 
 ## Resolving Discrepancies and Keeping Systems in Sync
 

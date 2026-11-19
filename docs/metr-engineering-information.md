@@ -16,6 +16,14 @@ METR was developed using systems engineering methods grounded in stakeholder eng
 
 Consistent terminology is essential across independently owned METR components. The [vocabulary](https://isotc204.org/iso24315-vocab/latest/) material aligns with ISO/TS 24315-1 and supports precise reading of the operational concept, requirements, and implementation guides.
 
+### Relationships to other standards
+
+The METR standard series (ISO 24315) is part of a larger family of ITS standards, including:
+
+- Graphic Data Dictionary (ISO 14823)
+- Location Referencing
+- IEEE 1609.2
+
 ### Traceability
 
 METR materials are maintained so that workshop inputs, operational concepts, and requirements remain linked. The [documentation index](documentation/index.md) introduces the published and draft artefacts:

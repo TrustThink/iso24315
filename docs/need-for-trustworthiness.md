@@ -34,7 +34,7 @@ Together, information security, safety, and reliability establish the foundation
 
 ## Related pages
 
-- [What is METR](what-is-metr.md)
+- [Home](index.md)
 - [System of systems](system-of-systems.md)
 - [Roadway environment](roadway-environment.md)
-- [Key components](key-components.md)
+- [Key functions](key-functions.md)

@@ -82,7 +82,7 @@ Several issues are easy to underestimate:
 
 ## Related Pages
 
-- [Key components](key-components.md)
+- [Key functions](key-functions.md)
 - [Physical view](physical-view.md)
 - [System of systems](system-of-systems.md)
 - [Regulation system guidance](regulation-system-perspective.md)
